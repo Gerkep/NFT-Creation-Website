@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar{
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+}
+.nav-btn{display: none;}
+.links{
+    display: none;
+}
+.desktop-description{display: none;}
+.logo{font-size: 5vw;}
+.slogan{margin-top: 12vw; text-align: center; font-size: 5vw;}
+.colorful-text{
+    background-image: linear-gradient(to right bottom, #e8c076, #f4a76b, #fb8c6e, #fb727c, #f05b93, #e34ca0, #d042ae, #b63fbe, #a535c3, #8f2dc9, #7429cf, #4d28d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 6vw 20vw 6vw 20vw;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.eth-illustration{
+    background-image: url("../images/eth-illustration.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+.mobile-main-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-position: 10%;
+        text-align: unset;
+    }
+    .mobile-main-btn{display: none;}
+    .btn{
+        padding: 1.2vw 2.5vw 1.2vw 2.5vw;
+        font-size: 1vw;
+    }
+    .navbar{
+        height: 5vw;
+        padding-top: 2vw;
+        justify-content: left;
+    }
+    .links{
+        display: block;
+        margin-left: 15vw;
+    }
+    .nav-btn{display: block; margin-left: 13vw;}
+    .logo{margin-left: 5vw; font-size: 1.4vw;}
+    .nav-link{
+        margin: 0 3vw 0 3vw;
+        font-size: 1vw;
+    }
+    .welcome-page{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        grid-template-areas: 
+          "welcome-text main-img"; 
+    }
+    .welcome-text { grid-area: welcome-text; }
+    .main-img { grid-area: main-img; }
+    .eth-illustration{
+      height: 40vw;
+    }
+    .slogan{margin: 10vw 0 0 5vw; text-align: left; font-size: 2.5vw;}
+    .slogan-br{display: none;}
+    .desktop-description{
+        display: block;
+        font-size: 2vw;
+        color: rgb(0, 0, 0);
+        margin-top: 1vw;
+    }
+}
