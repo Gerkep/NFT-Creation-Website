@@ -19,12 +19,13 @@ a{
     padding-top: 5vw;
 }
 .nav-btn{display: none;}
+.desktop-main-btn{display: none;}
 .links{
     display: none;
 }
 .desktop-description{display: none;}
 .logo{font-size: 5vw;}
-.slogan{margin-top: 12vw; text-align: center; font-size: 5vw;}
+.slogan{margin-top: 12vw; font-size: 5vw;}
 .colorful-text{
     background-image: linear-gradient(to right bottom, #e8c076, #f4a76b, #fb8c6e, #fb727c, #f05b93, #e34ca0, #d042ae, #b63fbe, #a535c3, #8f2dc9, #7429cf, #4d28d6);
     -webkit-background-clip: text;
@@ -48,6 +49,15 @@ a{
     margin: auto;
     margin-top: 5vw;
 }
+.section-header{font-size: 10vw; margin-bottom: 5vw;}
+.section{
+    padding-top: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .mobile-main-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
 
 @media screen and (min-width: 1200px) {
@@ -91,8 +101,14 @@ a{
     .slogan-br{display: none;}
     .desktop-description{
         display: block;
-        font-size: 2vw;
+        font-size: 1.8vw;
         color: rgb(0, 0, 0);
         margin-top: 1vw;
+        font-weight: 400;
+    }
+    .desktop-main-btn{display: block; margin-top: 5vw; font-size: 1.8vw; font-weight: 500;  padding: 1.5vw 3vw 1.5vw 3vw; border-radius: 12px;} 
+    .section-header{font-size: 5vw; margin: 5vw 0 5vw 5vw; width: 100%;}
+    .section{
+        padding-top: 3.5vw;
     }
 }
