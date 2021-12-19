@@ -62,18 +62,18 @@
       margin-top: -3.2vw;
       margin-bottom: 2vw;
   }
-    .detail{padding-top: 2vw; font-size: 2vw; font-weight: 400;}
-    .name {font-size: 3vw; padding: 0; font-weight: 700;}
-    .price {font-size: 3vw; font-weight: 700;}
-    .from{font-size: 1.5vw; color: #0000009a; font-weight: 400;}
-    .format{font-size: 1.5vw; color: #0000009a;}
+    .detail{padding-top: 1.5vw; font-size: 1.5vw; font-weight: 400;}
+    .name {font-size: 2.5vw; padding: 0; font-weight: 700;}
+    .price {font-size: 2.5vw; font-weight: 700;}
+    .from{font-size: 1vw; color: #0000009a; font-weight: 400;}
+    .format{font-size: 1vw; color: #0000009a;}
     .button{
-      width: 15vw;
-      height: 4vw;
-      margin-top: 2vw;
+      width: 13vw;
+      height: 3.5vw;
+      margin-top: 1.5vw;
       border-radius: 20px;
-      font-size: 1.5vw;
+      font-size: 1vw;
       border: 3px solid #e40ab1;
     }
-    .note{font-size: 1vw; margin-top: 2.2vw; font-weight: 400; color: #0000009a;}
+    .note{font-size: 01vw; margin-top: 1.7vw; font-weight: 400; color: #0000009a;}
   }

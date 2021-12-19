@@ -1,6 +1,8 @@
 import React from "react";
 import '../style/App.css';
 import OfferCard from "./OfferCard";
+import AboutContainer from "./AboutContainer";
+import pictureIllustration from "../images/picture-dynamic-gradient.png"
 
 const App = () =>{
     return(
@@ -39,6 +41,9 @@ const App = () =>{
             </div>
             <div className="section about-section">
                 <h2 className="section-header">Explore NFT.</h2>
+                <AboutContainer image={pictureIllustration} header="" text=""/>
+                <AboutContainer image="" header="" text=""/>
+                <AboutContainer image="" header="" text=""/>
             </div>
         </div>
     )

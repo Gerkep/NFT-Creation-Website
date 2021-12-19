@@ -19,7 +19,7 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
                 <div className="detail revisions"><b className="colorful-text">+</b>Video guide "how to mint NFT"</div>
                 <div className="detail price"><span className="from">from</span> ${price}</div>
                 <button className={`button ${isPro()}`}>Choose</button>
-                <p className="note">May vary depending on the complexity of the project.</p>
+                <p className="note">*May vary depending on the complexity of the project.</p>
             </div>
         </div>
     )
