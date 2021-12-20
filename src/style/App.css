@@ -19,7 +19,7 @@ a{
     padding-top: 5vw;
     width: 100%;
 }
-.nav-btn{display: none;}
+.nav-btn{display: none; }
 .desktop-main-btn{display: none;}
 .links{
     display: none;
@@ -59,7 +59,7 @@ a{
     flex-wrap: wrap;
 }
 .mobile-main-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
-.next-text{font-size: 6vw; font-weight: 700;}
+.next-text{font-size: 6vw; font-weight: 700; width: 100%;}
 
 @media screen and (min-width: 1200px) {
     body{
@@ -87,7 +87,7 @@ a{
     .logo{margin-left: 5vw; font-size: 1.4vw;}
     .nav-link{
         margin: 0 3vw 0 3vw;
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
     .welcome-page{
         display: grid; 

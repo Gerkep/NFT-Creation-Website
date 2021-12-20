@@ -12,12 +12,11 @@ const App = () =>{
         <div className="main-page">
 
             <div className="navbar">
-                <p className="logo">Nart</p>
+                <p className="logo">Pixel Factory</p>
                 <div className="links">
-                    <a className="nav-link" href="#">About NFT's</a>
-                    <a className="nav-link" href="#">Getting started</a>
-                    <a className="nav-link" href="#">Pricing</a>
-                    <a className="nav-link" href="#">Consultation</a>
+                    <a href="" className="nav-link">Price</a>
+                    <a href="" className="nav-link">Workflow</a>
+                    <a href="" className="nav-link">Abou NFT</a>
                 </div>
                 <button className="btn nav-btn">Get started!</button>
             </div>
@@ -49,11 +48,11 @@ const App = () =>{
                 <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
             </div>
             <div className="section trending-section">
-                <h2 className="section-header">Trending NFT's.</h2>
+                <h2 className="section-header">Hottest NFT's.</h2>
                 <div className="trending">
                     <TrendingCard picture="" header=""/>
                 </div>
-                <p className="next-text">You will be next!</p>
+                <p className="next-text">Your might be next!</p>
             </div>
             <div className="section help-section">
                 <h2 className="section-header">Need help?</h2>
