@@ -1,8 +1,11 @@
 import React from "react";
 import '../style/App.css';
 import OfferCard from "./OfferCard";
-import AboutContainer from "./AboutContainer";
-import pictureIllustration from "../images/picture-dynamic-gradient.png"
+import WorkflowContainer from "./WorkflowContainer";
+import TrendingCard from "./TrendingCard";
+import contactIllustration from "../images/chat-dynamic-gradient.png";
+import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
+import axeIllustration from "../images/axe-dynamic-gradient.png";
 
 const App = () =>{
     return(
@@ -40,10 +43,20 @@ const App = () =>{
                 <OfferCard name="Max" characters="10K" delivery={10} revisions={7} price={1239}/>
             </div>
             <div className="section about-section">
-                <h2 className="section-header">Explore NFT.</h2>
-                <AboutContainer image={pictureIllustration} header="" text=""/>
-                <AboutContainer image="" header="" text=""/>
-                <AboutContainer image="" header="" text=""/>
+                <h2 className="section-header">How does it work?</h2>
+                <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
+                <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
+                <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
+            </div>
+            <div className="section trending-section">
+                <h2 className="section-header">Trending NFT's.</h2>
+                <div className="trending">
+                    <TrendingCard picture="" header=""/>
+                </div>
+                <p className="next-text">You will be next!</p>
+            </div>
+            <div className="section help-section">
+                <h2 className="section-header">Need help?</h2>
             </div>
         </div>
     )

@@ -17,6 +17,7 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 5vw;
+    width: 100%;
 }
 .nav-btn{display: none;}
 .desktop-main-btn{display: none;}
@@ -57,8 +58,8 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .mobile-main-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
+.next-text{font-size: 6vw; font-weight: 700;}
 
 @media screen and (min-width: 1200px) {
     body{
@@ -72,8 +73,11 @@ a{
     }
     .navbar{
         height: 5vw;
-        padding-top: 2vw;
+        padding: 1vw 0 1vw 0;
         justify-content: left;
+        backdrop-filter: blur(15px);
+        position: fixed;
+        top: 0;
     }
     .links{
         display: block;
@@ -91,8 +95,9 @@ a{
         grid-template-rows: 1fr; 
         grid-template-areas: 
           "welcome-text main-img"; 
+          margin-top: 6vw;
     }
-    .welcome-text { grid-area: welcome-text; }
+    .welcome-text { grid-area: welcome-text;}
     .main-img { grid-area: main-img; }
     .eth-illustration{
       height: 40vw;
