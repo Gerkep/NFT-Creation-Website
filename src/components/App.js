@@ -33,7 +33,7 @@ const App = () =>{
                     <div className="eth-illustration"></div>
                 </div>
             </div>
-            <button className="btn mobile-main-btn">Get started!</button>
+            <button className="btn mobile-btn">Get started!</button>
 
             <div className="section offer-section">
                 <h2 className="section-header">Choose project.</h2>
@@ -42,7 +42,7 @@ const App = () =>{
                 <OfferCard name="Max" characters="10K" delivery={10} revisions={7} price={1239}/>
             </div>
             <div className="section about-section">
-                <h2 className="section-header">How does it work?</h2>
+                <h2 className="section-header">How it works?</h2>
                 <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
                 <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
                 <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
@@ -51,11 +51,28 @@ const App = () =>{
                 <h2 className="section-header">Hottest NFT's.</h2>
                 <div className="trending">
                     <TrendingCard picture="" header=""/>
+                    <TrendingCard picture="" header=""/>
+                    <TrendingCard picture="" header=""/>
                 </div>
                 <p className="next-text">Your might be next!</p>
             </div>
-            <div className="section help-section">
-                <h2 className="section-header">Need help?</h2>
+            <div className="section hook-section">
+                <h2 className="section-header">NFT BOOM is coming!</h2>
+                <div className="hook-container">
+                    <div className="best-illustration"></div>
+                    <div className="hook-content">
+                        <div className="hook">
+                            Year <span className="colorful-text">2022</span> is expected to be <span className="colorful-text">the best year for NFT's</span>, 
+                            so if you have an idea for NFT don't wait and join this big trend! 
+                            Reach us out and become next NFT millionaire.
+                            Don't miss the opportunity. <span className="colorful-text">We are still early!</span>
+                        </div>
+                        <button className="btn mobile-btn" id="hook-btn">Get started!</button>
+                    </div>
+                </div>
+            </div>
+            <div className="footer">
+
             </div>
         </div>
     )

@@ -50,7 +50,7 @@ a{
     margin: auto;
     margin-top: 5vw;
 }
-.section-header{font-size: 10vw; margin-bottom: 5vw;}
+.section-header{font-size: 10vw; margin-bottom: 5vw; padding: 0 5vw 0 5vw;}
 .section{
     padding-top: 25vw;
     display: flex;
@@ -58,15 +58,46 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-.mobile-main-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
+.mobile-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
 .next-text{font-size: 6vw; font-weight: 700; width: 100%;}
+.trending{
+    overflow-x: scroll;
+    display: flex;
+}
+.trending::-webkit-scrollbar {
+    display: none;
+  }
+  .trending {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+.best-illustration{
+    background-image: url("../images/calender-dynamic-gradient.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100%;
+}
+.hook-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hook{
+    width: 90%;
+    font-size: 6vw;
+    box-shadow: 0 4 30px black;
+    margin: 5vw 0 4vw 0;
+}
 
 @media screen and (min-width: 1200px) {
     body{
         background-position: 10%;
         text-align: unset;
     }
-    .mobile-main-btn{display: none;}
+    .mobile-btn{display: none;}
     .btn{
         padding: 1.2vw 2.5vw 1.2vw 2.5vw;
         font-size: 1vw;
@@ -83,11 +114,11 @@ a{
         display: block;
         margin-left: 15vw;
     }
-    .nav-btn{display: block; margin-left: 13vw;}
+    .nav-btn{display: block; margin-left: 23vw;}
     .logo{margin-left: 5vw; font-size: 1.4vw;}
     .nav-link{
         margin: 0 3vw 0 3vw;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     .welcome-page{
         display: grid; 
@@ -116,4 +147,14 @@ a{
     .section{
         padding-top: 3.5vw;
     }
+    .hook-container{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "best-illustration hook";
+    }
+    .best-illustration { grid-area: best-illustration;  height: 40vw;}
+    .hook { grid-area: hook; font-size: 3vw;}
 }

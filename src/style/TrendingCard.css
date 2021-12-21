@@ -1,52 +1,55 @@
 .card{
-    width: 70vw;
+    width: 60vw;
     height: 50vw;
     box-shadow: 0px 5px 48px rgba(0, 0, 0, 0.432);
     display: flex;
     align-items: flex-end;
-    background-image: url("../images/cryptopunks.jpeg");
+    background-image: url("../images/cryptopunk.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border-radius: 12px;
+    margin: 8vw 4vw 14vw 4vw;
+    flex-shrink: 0;
 }
 .description{
     padding: 1vw;
     width: 70%;
-    height: 15vw;
+    height: 12vw;
     background-color: #f0f0f05b;
-    border: 1px rgba(255, 255, 255, 0.253) solid;
-    box-shadow: 0 1px 7px rgba(255, 255, 255, 0.61);
+    border: 1.5px rgba(255, 255, 255, 0.301) solid;
     backdrop-filter: blur(3px);
     border-radius: 8px;
     margin: 0 0 4vw 4vw;
     color: white;
     text-align: left;
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1.2fr 0.8fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "name link"
       "price link"; 
 }
-.name{
+.name-nft{
     grid-area: name;
-    font-size: 4vw;
+    font-size: 3vw;
 }
-.price{
+.price-nft{
     grid-area: price;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 500;
 }
 .link{
     height: 7vw;
     width: 17vw;
-    margin: 7vw 0 0 1vw;
+    margin: 3vw 0 0 1vw;
     grid-area: link;
     border-radius: 8px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.568);
+    backdrop-filter: blur(15px);
     border: none;
     font-weight: 700;
+    cursor: pointer;
 }
 .colorful-text{
     font-weight: 700;
