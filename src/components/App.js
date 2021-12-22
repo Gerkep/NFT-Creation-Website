@@ -6,6 +6,8 @@ import TrendingCard from "./TrendingCard";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
+import boredApe from "../images/boredape.png";
+import cryptoPunk from "../images/cryptopunk.png";
 
 const App = () =>{
     return(
@@ -50,11 +52,13 @@ const App = () =>{
             <div className="section trending-section">
                 <h2 className="section-header">Hottest NFT's.</h2>
                 <div className="trending">
+                    <TrendingCard picture={boredApe} name="Bored Ape #2087"/>
+                    <TrendingCard picture={cryptoPunk} name="CryptoPunk #7523"/>
                     <TrendingCard picture="" header=""/>
                     <TrendingCard picture="" header=""/>
                     <TrendingCard picture="" header=""/>
                 </div>
-                <p className="next-text">Your might be next!</p>
+                <p className="next-text"><span className="colorful-text">Your might be next!</span></p>
             </div>
             <div className="section hook-section">
                 <h2 className="section-header">NFT BOOM is coming!</h2>
@@ -72,9 +76,22 @@ const App = () =>{
                 </div>
             </div>
             <div className="footer">
+                <div>LOGO</div>
 
+            <div className="social-media">
+
+                    <a className="media-icon twitter" href=""></a>
+                    <a className="media-icon instagram" href=""></a>
+                    <a className="media-icon facebook" href=""></a>
+                </div>
+                <div className="payment-methods">
+                    <p>Payment methods</p>
+                    <div className="payment-icon"></div>
+                    <div className="payment-icon"></div>
+                </div>
+                <div className="copyright">@2022 Piotr Gerke</div>
             </div>
-        </div>
+        </div> 
     )
 }
 

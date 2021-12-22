@@ -29,6 +29,7 @@
   font-weight: 700;
   background-color: transparent;
   border: 2px solid #e40ab1;
+  cursor: pointer;
 }
 .pro{
   color: white;

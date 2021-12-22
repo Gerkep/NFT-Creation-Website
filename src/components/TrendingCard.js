@@ -1,13 +1,13 @@
 import React from "react";
 import '../style/TrendingCard.css';
 
-const TrendingCard = () => {
+const TrendingCard = ({name, picture, price, link}) => {
     return(
-        <div className="card">
+        <div className="card" style={{backgroundImage: `url(${picture})`}}>
             <div className="description">
-                <h3 className="name-nft">CryptoPunk #7523</h3>
-                <div className="price-nft">price:<span className="colorful-text"> $532M</span></div>
-                <button className="link"><span className="colorful-text">OpenSea</span></button>
+                <h3 className="name-nft">{name}</h3>
+                <div className="price-nft">price:<span className="colorful-text"> {price}</span></div>
+                <a className="link"><span className="colorful-text">OpenSea</span></a>
             </div>
         </div>
     )
