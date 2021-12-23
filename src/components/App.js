@@ -45,9 +45,12 @@ const App = () =>{
             </div>
             <div className="section about-section">
                 <h2 className="section-header">How it works?</h2>
-                <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
-                <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
-                <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
+                <div className="workflow-section">
+                    <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
+                    <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
+                    <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
+                </div>
+                
             </div>
             <div className="section trending-section">
                 <h2 className="section-header">Hottest NFT's.</h2>
@@ -66,7 +69,7 @@ const App = () =>{
                     <div className="best-illustration"></div>
                     <div className="hook-content">
                         <div className="hook">
-                            Year <span className="colorful-text">2022</span> is expected to be <span className="colorful-text">the best year for NFT's</span>, 
+                            Year <span className="colorful-text">2022</span> is expected to be <br/><span className="colorful-text">the best year for NFT's</span>, 
                             so if you have an idea for NFT don't wait and join this big trend! 
                             Reach us out and become next NFT millionaire.
                             Don't miss the opportunity. <span className="colorful-text">We are still early!</span>
@@ -76,21 +79,26 @@ const App = () =>{
                 </div>
             </div>
             <div className="footer">
-                <div>LOGO</div>
-
-            <div className="social-media">
-
-                    <a className="media-icon twitter" href=""></a>
-                    <a className="media-icon instagram" href=""></a>
-                    <a className="media-icon facebook" href=""></a>
+                <div className="footer-logo">LOGO</div>
+                <div className="footer-navbar">
+                    <a className="footer-link" href="">Let's design!</a>
+                    <a className="footer-link" href="">Pricing</a>
+                    <a className="footer-link" href="">Workflow</a>
                 </div>
+                <div className="social-media">
+                        <a className="media-icon twitter" href=""></a>
+                        <a className="media-icon instagram" href=""></a>
+                        <a className="media-icon facebook" href=""></a>
+                </div>
+            </div>
+            <div className="footer-under">
                 <div className="payment-methods">
-                    <p>Payment methods</p>
-                    <div className="payment-icon"></div>
-                    <div className="payment-icon"></div>
+                    <div className="payment-icon">P</div>
+                    <div className="payment-icon">P</div>
                 </div>
                 <div className="copyright">@2022 Piotr Gerke</div>
             </div>
+            
         </div> 
     )
 }

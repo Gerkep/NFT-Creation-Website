@@ -7,7 +7,7 @@ const TrendingCard = ({name, picture, price, link}) => {
             <div className="description">
                 <h3 className="name-nft">{name}</h3>
                 <div className="price-nft">price:<span className="colorful-text"> {price}</span></div>
-                <a className="link"><span className="colorful-text">OpenSea</span></a>
+                <a className="link" href="#"><span className="colorful-text">OpenSea</span></a>
             </div>
         </div>
     )
