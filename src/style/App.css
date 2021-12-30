@@ -48,7 +48,7 @@ a{
     background-repeat: no-repeat;
     height: 80vw;
     margin: auto;
-    margin-top: 5vw;
+    margin: 5vw 0 10vw 0;
 }
 .section-header{font-size: 10vw; margin-bottom: 5vw; padding: 0 5vw 0 5vw;}
 .section{
@@ -58,7 +58,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-.mobile-btn{text-align: center; font-size: 4vw; margin-top: 5vw;}
+.mobile-btn{text-align: center; font-size: 4vw;}
 .workflow-section{
     width: 100%;
     display: flex;
