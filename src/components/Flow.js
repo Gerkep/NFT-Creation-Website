@@ -6,11 +6,10 @@ import '../style/Flow.css';
 const Flow = ({children, header, link}) => {
     return(
         <div>
-            <h1>{header}</h1>
+            <h1 className="flow-header">{header}</h1>
             <div className="content">
                 {children}
             </div>
-            <Link className="continue-btn" to={`${link}`}>Continue</Link>
         </div>
     )
 }

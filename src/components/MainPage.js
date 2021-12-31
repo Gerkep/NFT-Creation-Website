@@ -4,33 +4,28 @@ import {Link} from 'react-router-dom';
 
 import OfferCard from "./OfferCard";
 import WorkflowContainer from "./WorkflowContainer";
-import TrendingCard from "./TrendingCard";
+// import TrendingCard from "./TrendingCard";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
-import boredApe from "../images/boredape.png";
-import cryptoPunk from "../images/cryptopunk.png";
+// import boredApe from "../images/boredape.png";
+// import cryptoPunk from "../images/cryptopunk.png";
 
 const MainPage = () => {
     return(
         <div className="main-page">
 
         <div className="navbar">
-            <p className="logo">Pixel Factory</p>
-            <div className="links">
-                <a href="" className="nav-link">Price</a>
-                <a href="" className="nav-link">Workflow</a>
-                <a href="" className="nav-link">Abou NFT</a>
-            </div>
+            <p className="logo">NFT Factory</p>
             <Link to="/project" className="btn nav-btn">Get started!</Link>
         </div>
 
         <div className="welcome-page">
             <div className="welcome-text">
                 <div className="slogan">
-                    <h1>Bring Your idea<br className="slogan-br"/> to <span className="colorful-text">NFT art.</span></h1>
+                    <h1>We bring Your <br/>idea to <span className="colorful-text">NFT art.</span></h1>
                     <h3 className="desktop-description">We gathered best designers to create<br/> beautiful art designed to become NFT.</h3>
-                    <button className="btn desktop-main-btn">Get started!</button>
+                    <Link to="/project" className="btn desktop-main-btn">Get started!</Link>
                 </div>
             </div>
             <div className="main-img">
@@ -54,7 +49,7 @@ const MainPage = () => {
             </div>
             
         </div>
-        <div className="section trending-section">
+        {/* <div className="section trending-section">
             <h2 className="section-header">Hottest NFT's.</h2>
             <div className="trending">
                 <TrendingCard picture={boredApe} name="Bored Ape #2087"/>
@@ -64,17 +59,17 @@ const MainPage = () => {
                 <TrendingCard picture="" header=""/>
             </div>
             <p className="next-text"><span className="colorful-text">Your might be next!</span></p>
-        </div>
+        </div> */}
         <div className="section hook-section">
             <h2 className="section-header">NFT BOOM is coming!</h2>
             <div className="hook-container">
                 <div className="best-illustration"></div>
                 <div className="hook-content">
                     <div className="hook">
-                        Year <span className="colorful-text">2022</span> is expected to be <br/><span className="colorful-text">the best year for NFT's</span>, 
+                        Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>, 
                         so if you have an idea for NFT don't wait and join this big trend! 
                         Reach us out and become next NFT millionaire.
-                        Don't miss the opportunity.<br/> <span className="colorful-text">We are still early!</span>
+                        Don't miss the opportunity.<br className="mobile-br"/> <span className="colorful-text">We are still early!</span>
                     </div>
                     <Link to="/project" className="btn mobile-btn" id="hook-btn">Get started!</Link>
                 </div>
@@ -83,7 +78,7 @@ const MainPage = () => {
         <div className="footer">
             <div className="footer-logo">LOGO</div>
             <div className="footer-navbar">
-                <a className="footer-link" href="">Let's design!</a>
+                <Link to="/project" className="footer-link" href="">Let's design!</Link>
                 <a className="footer-link" href="">Pricing</a>
                 <a className="footer-link" href="">Workflow</a>
             </div>

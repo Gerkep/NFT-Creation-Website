@@ -1,11 +1,10 @@
 import React from "react";
 import Flow from './Flow';
-
+import "../style/Description.css"
 const ProjectDescription = () => {
     return(
         <div>
-            <Flow header="Describe your NFT idea" link="/project/summary">
-                Project description flow
+            <Flow header="Describe idea" link="/project/summary">
             </Flow>
         </div>
     )
