@@ -1,13 +1,16 @@
 import React from "react";
+import { connect } from "react-redux";
+import { selectProject } from "../actions";
 import '../style/OfferCard.css';
 
-const OfferCard = ({name, characters, charactersFormat, delivery, revisions, price, pro}) => {
+const OfferCard = ({name, characters, charactersFormat, delivery, revisions, price, pro, selectProject}) => {
 
     const isPro = () =>{
         if(pro){
             return "pro"
         }
     }
+
     return(
         <div>
             <div className="offer-card">
@@ -18,11 +21,11 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
                 <div className="detail revisions">Up to <b className="colorful-text">{revisions}</b> revisions*</div>
                 <div className="detail revisions"><b className="colorful-text">+</b>Video guide "how to mint NFT"</div>
                 <div className="detail price"><span className="from">from</span> ${price}</div>
-                <button className={`button ${isPro()}`}>Choose</button>
+                <button onClick={() => selectProject(name)} className={`button ${isPro()}`}>Choose</button>
                 <p className="note">*May vary depending on the complexity of the project.</p>
             </div>
         </div>
     )
 }
 
-export default OfferCard;
+export default connect(null, {selectProject})(OfferCard);

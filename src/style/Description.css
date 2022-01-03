@@ -1,4 +1,106 @@
-.textarea{
+.description{
     width: 80vw;
     height: 40vw;
+    border-radius: 20px;
+    margin-top: 3vw;
+    font-size: 3vw;
+    padding: 2.5vw;
+    margin-left: 6vw;
+    border: solid 2px black;
 }
+.description-container{
+    margin-top: 10vw;
+}
+.input{
+    width: 55vw;
+    height: 7vw;
+    margin-top: 3vw;
+    border-radius: 20px;
+    padding: 2vw;
+    font-size: 3vw;
+    margin-left: 6vw;
+    border: solid 2px black;
+}
+.label{
+    text-align: left;
+    margin-left: 6vw;
+    font-size: 4vw;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+img {
+    max-height: 240px;
+    margin: 0 auto;
+  }
+  
+  .app-container {
+    width: 85vw;
+    margin-left: 6vw;
+    border-radius: 20px;
+  }
+  
+  .clear {
+    clear: both;
+    margin: 0 auto;
+    border: none;
+    margin-right: 5vw;
+    margin-top: -8.5vw;
+  }
+  
+  .details,
+  .title {
+    text-align: left;
+  }
+  .details{
+      margin-left: 5vw;
+  }
+  .title{
+      font-size: 4vw;
+      margin: 10vw 0 3vw 0;
+  }
+  
+  .error {
+    margin-top: 4px;
+    color: red;
+  }
+  
+  .has-error {
+    border: 1px dotted red;
+  }
+  
+  .image-container {
+    align-items: center;
+    display: flex;
+    width: 85%;
+    height: 80%;
+    float: left;
+    margin: 15px 10px 10px 37px;
+    text-align: center;
+  }
+  
+  .preview-container {
+    height: 335px;
+    width: 100%;
+  }
+  
+  .placeholder-preview {
+    cursor: pointer;
+  }
+  
+  .placeholder-preview,
+  .render-preview {
+    text-align: center;
+    background-color: #efebeb;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .upload-container {
+    cursor: pointer;
+    height: 300px;
+  }
+  

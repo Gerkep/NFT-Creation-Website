@@ -1,18 +1,19 @@
 import React from "react";
 import '../style/App.css';
-import { BrowserRouter, Route } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import MainPage from "./MainPage";
 import ProjectSize from "./ProjectSize";
 import ProjectDescription from "./ProjectDescription";
 import ProjectSummary from "./ProjectSummary";
 import ProjectStyle from "./ProjectStyle";
+import history from "../history";
 
 
 
 const App = () =>{
     return(
         <div>
-            <BrowserRouter>
+            <Router history={history}>
                 <div>
                     <Route path="/" exact component={MainPage}/>
                     <Route path="/project" exact component={ProjectSize}/>
@@ -20,7 +21,7 @@ const App = () =>{
                     <Route path="/project/description" exact component={ProjectDescription}/>
                     <Route path="/project/summary" exact component={ProjectSummary}/>
                 </div>
-            </BrowserRouter>
+            </Router>
         </div>
     )
 }

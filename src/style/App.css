@@ -80,7 +80,7 @@ a{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50vw;
+    height: 60vw;
     width: 100%;
 }
 .hook-content{
@@ -203,14 +203,14 @@ a{
     .next-text{font-size: 3vw; text-align: center;}
     .hook-container{
         display: grid; 
-        grid-template-columns: 0.7fr 1fr; 
+        grid-template-columns: 0.8fr 1.4fr; 
         grid-template-rows: 1fr; 
         grid-template-areas: 
           "best-illustration hook";
           margin-bottom: 8vw;
     }
-    .best-illustration { grid-area: best-illustration;  height: 20vw; margin-top: 2.5vw;}
-    .hook { grid-area: hook; font-size: 1.8vw; margin-bottom: 0; margin-right: 8vw;}
+    .best-illustration { grid-area: best-illustration;  height: 25vw;}
+    .hook { grid-area: hook; font-size: 1.8vw; margin: 8vw 8vw 0 0;}
     .footer{
         width: 100%;
         height: 10vw;

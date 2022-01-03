@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import '../style/Flow.css';
 
-const Flow = ({children, header, link}) => {
+const Flow = ({children, header}) => {
     return(
         <div>
             <h1 className="flow-header">{header}</h1>
