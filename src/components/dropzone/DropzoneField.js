@@ -12,6 +12,7 @@ const DropZoneField = ({
   meta: { error, touched }
 }) => (
   <div className="preview-container">
+    <h1 className="title">Upload Image:</h1>
     <DropZone
       accept="image/jpeg, image/png, image/gif, image/bmp"
       className="upload-container"
@@ -30,19 +31,6 @@ const DropZoneField = ({
   </div>
 );
 
-DropZoneField.propTypes = {
-  error: PropTypes.string,
-  handleOnDrop: PropTypes.func.isRequired,
-  imagefile: PropTypes.arrayOf(
-    PropTypes.shape({
-      file: PropTypes.file,
-      name: PropTypes.string,
-      preview: PropTypes.string,
-      size: PropTypes.number
-    })
-  ),
-  onChange: PropTypes.func,
-  touched: PropTypes.bool
-};
+
 
 export default DropZoneField;

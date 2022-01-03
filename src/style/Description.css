@@ -33,6 +33,7 @@
 }
 img {
     max-height: 240px;
+    max-width: 70vw;
     margin: 0 auto;
   }
   
@@ -46,8 +47,11 @@ img {
     clear: both;
     margin: 0 auto;
     border: none;
-    margin-right: 5vw;
-    margin-top: -8.5vw;
+    margin-right: 15vw;
+    margin-top: 5vw;
+    height: 10vw;
+    float: right;
+    background-color: transparent;
   }
   
   .details,
@@ -59,7 +63,7 @@ img {
   }
   .title{
       font-size: 4vw;
-      margin: 10vw 0 3vw 0;
+      margin: 10vw 0 0 6vw;
   }
   
   .error {
@@ -95,12 +99,20 @@ img {
     text-align: center;
     background-color: #efebeb;
     height: 100%;
-    width: 100%;
+    width: 86vw;
+    margin-left: 6vw;
     border-radius: 20px;
+    margin-top: 3vw;
   }
   
   .upload-container {
     cursor: pointer;
     height: 300px;
   }
-  
+  #continue-btn{
+    margin: 0 auto;
+    margin-top: 12vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 4vw;
+  }

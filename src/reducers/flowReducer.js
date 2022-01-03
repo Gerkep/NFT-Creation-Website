@@ -1,6 +1,9 @@
 const INITIAL_STATE = {
     project: null,
     style: null,
+    email: null,
+    description: null,
+    image: null,
     paid: false
 }
 
@@ -10,6 +13,8 @@ export default (state = INITIAL_STATE, action) => {
             return {...state, project: action.payload}
         case "STYLE_SELECTED":
             return {...state, style: action.payload}
+        case "ORDER_SUBMITTED":
+            return {...state, email: action.payload.email, description: action.payload.description, image: action.payload.imageToUpload.preview}
         default:
             return state;
     }

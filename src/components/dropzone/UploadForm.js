@@ -32,7 +32,7 @@ class UploadImageForm extends Component {
 
   render = () => (
     <div className="app-container">
-      <h1 className="title">Upload Image</h1>
+      <h1 className="title">Upload Image:</h1>
       <Form onSubmit={this.props.handleSubmit(this.handleFormSubmit)}>
         <Field
           name="imageToUpload"

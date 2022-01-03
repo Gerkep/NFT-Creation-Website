@@ -12,9 +12,5 @@ const ShowError = ({ error, touched }) =>
     </div>
   ) : null;
 
-ShowError.propTypes = {
-  error: PropTypes.string,
-  touched: PropTypes.bool
-};
 
 export default ShowError;

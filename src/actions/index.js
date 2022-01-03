@@ -10,3 +10,8 @@ export const selectStyle = (style) => (dispatch, getState)  => {
         history.push('/project/description');
 };
 
+export const submitOrder = (formValues) => (dispatch, getState) => {
+    dispatch({type: 'ORDER_SUBMITTED', payload: formValues});
+    history.push('/project/summary');
+}
+
