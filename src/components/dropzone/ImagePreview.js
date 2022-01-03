@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const ImagePreview = ({ imagefile }) =>
   imagefile.map(({ name, preview, size }) => (
@@ -12,16 +11,5 @@ const ImagePreview = ({ imagefile }) =>
       </div>
     </div>
   ));
-
-ImagePreview.propTypes = {
-  imagefile: PropTypes.arrayOf(
-    PropTypes.shape({
-      file: PropTypes.file,
-      name: PropTypes.string,
-      preview: PropTypes.string,
-      size: PropTypes.number
-    })
-  )
-};
 
 export default ImagePreview;
