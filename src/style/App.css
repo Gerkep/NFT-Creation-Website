@@ -11,6 +11,14 @@ a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
 }
+.logo{
+    background-image: linear-gradient(to right bottom, #e8c076, #f4a76b, #fb8c6e, #fb727c, #f05b93, #e34ca0, #d042ae, #b63fbe, #a535c3, #8f2dc9, #7429cf, #4d28d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 9vw;
+    margin-top: 5vw;
+}
 .navbar{
     height: 10vw;
     display: flex;
@@ -22,8 +30,8 @@ a{
 .nav-btn{display: none; }
 .desktop-main-btn{display: none;}
 .desktop-description{display: none;}
-.logo{font-size: 5vw;}
 .slogan{margin-top: 12vw; font-size: 5vw;}
+.colorful-text-desktop{color: black;}
 .colorful-text{
     background-image: linear-gradient(to right bottom, #e8c076, #f4a76b, #fb8c6e, #fb727c, #f05b93, #e34ca0, #d042ae, #b63fbe, #a535c3, #8f2dc9, #7429cf, #4d28d6);
     -webkit-background-clip: text;
@@ -64,17 +72,6 @@ a{
     justify-content: center;
 }
 .next-text{font-size: 6vw; font-weight: 700; width: 100%;}
-/* .trending{
-    overflow-x: scroll;
-    display: flex;
-}
-.trending::-webkit-scrollbar {
-    display: none;
-  }
-  .trending {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  } */
 .best-illustration{
     background-image: url("../images/calender-dynamic-gradient.png");
     background-position: center;
@@ -161,8 +158,8 @@ a{
         position: fixed;
         top: 0;
     }
-    .nav-btn{display: block; margin-left: 70vw;}
-    .logo{margin-left: 5vw; font-size: 1.4vw;}
+    .nav-btn{display: block; margin-left: 67vw;}
+    .logo{margin-left: 5vw; font-size: 3vw;}
     .welcome-page{
         display: grid; 
         grid-template-columns: 1fr 1fr; 

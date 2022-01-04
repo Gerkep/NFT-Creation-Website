@@ -1,9 +1,10 @@
 import React from "react";
+import '../style/Summary.css';
 
 const ProjectSummary = () => {
     return(
         <div>
-            Summary
+            <h2 className="header">Summary</h2>
         </div>
     )
 }

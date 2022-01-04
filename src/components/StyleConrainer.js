@@ -13,7 +13,6 @@ const StyleContainer = ({image, header, selectStyle, flow}) => {
     )
 }
 const mapStateToProps = state => {
-    console.log(state);
     return {flow: state.flow}
 }
 export default connect(mapStateToProps, {selectStyle})(StyleContainer);

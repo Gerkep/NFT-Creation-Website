@@ -25,3 +25,16 @@
     margin: 5vw 0 5vw 0;
     border-radius: 20px;
 }
+
+@media screen and (min-width: 1200px) {
+    .style-container{
+        width: 25vw;
+        margin-top: 3vw;
+        height: 30vw;
+        padding: 0;
+    }
+    .image{
+        width: 70%;
+        margin: 1vw 0 1vw 0;
+    }
+}

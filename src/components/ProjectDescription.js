@@ -2,7 +2,7 @@ import React from "react";
 import Flow from './Flow';
 
 
-import "../style/Description.css"
+import "../style/FlowDescription.css"
 import { connect } from "react-redux";
 import { submitOrder } from "../actions";
 import ProjectForm from "./ProjectForm";
@@ -17,7 +17,7 @@ class ProjectDescription extends React.Component {
     render(){
         return(
             <div>
-                <Flow header="Complete Your order">
+                <Flow header="Complete your order">
                     <ProjectForm onSubmit={this.onSubmit}></ProjectForm>
                 </Flow>
                 

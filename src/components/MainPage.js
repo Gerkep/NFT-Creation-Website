@@ -16,7 +16,7 @@ const MainPage = () => {
         <div className="main-page">
 
         <div className="navbar">
-            <p className="logo">NFT Factory</p>
+            <p className="logo">NFTiece</p>
             <Link to="/project" className="btn nav-btn">Get started!</Link>
         </div>
 
@@ -69,7 +69,7 @@ const MainPage = () => {
                         Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>, 
                         so if you have an idea for NFT don't wait and join this big trend! 
                         Reach us out and become next NFT millionaire.
-                        Don't miss the opportunity.<br className="mobile-br"/><span className="colorful-text">You are still early!</span>
+                        Don't miss the opportunity. <br className="mobile-br"/><span className="colorful-text">You are still early!</span>
                     </div>
                     <Link to="/project" className="btn mobile-btn" id="hook-btn">Get started!</Link>
                 </div>

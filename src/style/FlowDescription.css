@@ -8,18 +8,16 @@
     margin-left: 6vw;
     border: solid 2px black;
 }
-.description-container{
-    margin-top: 10vw;
-}
+
 .input{
     width: 55vw;
     height: 7vw;
-    margin-top: 3vw;
+    margin: 3vw 100px 10vw 6vw;
     border-radius: 20px;
     padding: 2vw;
     font-size: 3vw;
-    margin-left: 6vw;
     border: solid 2px black;
+    float: left;
 }
 .label{
     text-align: left;
@@ -48,7 +46,7 @@ img {
     margin: 0 auto;
     border: none;
     margin-right: 15vw;
-    margin-top: 5vw;
+    margin-top: -5.4vw;
     height: 10vw;
     float: right;
     background-color: transparent;
@@ -86,7 +84,7 @@ img {
   }
   
   .preview-container {
-    height: 335px;
+    height: 365px;
     width: 100%;
   }
   
@@ -115,4 +113,73 @@ img {
     margin-left: 20vw;
     margin-right: 20vw;
     font-size: 4vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .label{
+      margin-left: 4vw;
+      font-size: 2.5vw;
+      margin-top: 2vw;
+    }
+    .description{
+      height: 18vw;
+      width: 40vw;
+      font-size: 1.2vw;
+      padding: 1vw;
+      margin-left: 4vw;
+      margin-top: 1.5vw;
+    }
+    .input{
+      width: 20vw;
+      height: 1vw;
+      margin: 1.5vw 12vw 3vw 4vw;
+      padding: 1vw;
+      font-size: 1.2vw;
+    }
+    .preview-container {
+      height: 23vw;
+      width: 45vw;
+    }
+    img {
+      max-height: 15vw;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    .title{
+      font-size: 2.5vw;
+      margin: 2vw 0 0 8vw;
+  }
+  .details{
+    margin-left: 2vw;
+    max-width: 80%;
+  }
+  .placeholder-preview,
+  .render-preview {
+    height: 100%;
+    width: 35vw;
+    margin-left: 8vw;
+    margin-top: 1.5vw;
+  }
+  .image-container {
+    width: 80%;
+    height: 70%;
+    float: left;
+    margin: 25px 37px 20px 37px;
+  }
+  .clear {
+    position: absolute;
+    margin-left: 39vw;
+    margin-top: -4.7vw;
+    height: 10vw;
+    cursor: pointer;
+  }
+  #continue-btn{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 7.5vw;
+    margin-left: 8vw;
+    margin-right: 0vw;
+    font-size: 2vw;
+  }
+
   }
