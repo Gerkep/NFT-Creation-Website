@@ -1,4 +1,5 @@
 import React from "react";
+import '@stripe/stripe-js';
 import '../style/App.css';
 import { Router, Route } from "react-router-dom";
 import MainPage from "./MainPage";
