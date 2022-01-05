@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import DropZone from "react-dropzone";
 import ImagePreview from "./ImagePreview";
 import Placeholder from "./Placeholder";

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { MdInfoOutline } from "react-icons/md";
 
 const ShowError = ({ error, touched }) =>

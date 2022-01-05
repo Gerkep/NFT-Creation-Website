@@ -1,0 +1,26 @@
+.summary-container{
+    margin-top: 10vw;
+}
+.aspect{
+    margin: 5vw 0 2vw 8vw;
+    text-align: left;
+    font-size: 5vw;
+}
+.desc{
+    text-align: left;
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 3vw;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+.summary-note{
+    margin: 0 auto;
+    margin-top: 10vw;
+    width: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+
+}
