@@ -19,25 +19,34 @@ const ProjectSummary = (props) => {
     const [isLoading, setLoading] = useState(false);
 
     const item = {
-        price: "price_1KEbawJJSIx1GH1oi4sOzdTg",
+        price: "price_1KEgS0JJSIx1GH1o7JEHhU3G",
         quantity: 1
     };
 
+    if(props.flow.projct === "Basic"){
+        item.price = "price_1KEgS0JJSIx1GH1o7JEHhU3G";
+        item.quantity = 1;
+    }else if(props.flow.project === "Pro"){
+        item.price = "price_1KEgTYJJSIx1GH1og1qOq4VT";
+        item.quantity = 1;
+    }else if(props.flow.project === "Max"){
+        item.price = "price_1KEgVIJJSIx1GH1oqGvGMP9Y";
+        item.quantity = 1;
+    }
     const checkoutOptions = {
         lineItems: [item],
         mode: "payment",
         successUrl: `${window.location.origin}/`,
-        cancelUrl: `${window.location.origin}/project/summary`
+        cancelUrl: `${window.location.origin}/project/summary`,
+        customerEmail: `${props.flow.email}`
     }
+    
 
     const redirectToCheckout = async () => {
         setLoading(true);
-        console.log("redirectToCheckout");
 
         const stripe = await getStripe();
         const {error} = await stripe.redirectToCheckout(checkoutOptions);
-        console.log(error);
-
         if(error) setStripeError(error.message);
         setLoading(false);
     }

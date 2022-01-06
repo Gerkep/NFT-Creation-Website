@@ -41,7 +41,6 @@ class ProjectDescription extends React.Component {
     }
     onSubmit = (formValues) => {
         this.props.onSubmit(formValues);
-        console.log(formValues);
     }
 
     render(){

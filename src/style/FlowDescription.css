@@ -30,7 +30,7 @@
     width: 100%;
 }
 img {
-    max-height: 240px;
+    max-height: 200px;
     max-width: 70vw;
     margin: 0 auto;
   }
@@ -46,7 +46,7 @@ img {
     margin: 0 auto;
     border: none;
     margin-right: 15vw;
-    margin-top: -7.5vw;
+    margin-top: -9vw;
     height: 10vw;
     float: right;
     background-color: transparent;
@@ -80,12 +80,12 @@ img {
     width: 85%;
     height: 80%;
     float: left;
-    margin: 15px 10px 10px 37px;
+    margin: 15px 10px 10px 35px;
     text-align: center;
   }
   
   .preview-container {
-    height: 50vw;
+    height: 70vw;
     width: 100%;
   }
   
@@ -103,11 +103,12 @@ img {
     border-radius: 20px;
     margin-top: 3vw;
     font-size: 3vw;
+    padding-bottom: 3vw;
   }
   
   .upload-container {
     cursor: pointer;
-    height: 300px;
+    height: 350px;
   }
   #continue-btn{
     margin: 0 auto;
@@ -121,7 +122,7 @@ img {
     .label{
       margin-left: 4vw;
       font-size: 2.5vw;
-      margin-top: 2vw;
+
     }
     .description{
       height: 18vw;
@@ -143,13 +144,18 @@ img {
       width: 45vw;
     }
     img {
-      max-height: 15vw;
+      max-height: 17vw;
       max-width: 70%;
       margin: 0 auto;
     }
     .title{
       font-size: 2.5vw;
-      margin: 2vw 0 0 8vw;
+      margin: 0vw 0 0 8vw;
+  }
+  .error {
+    text-align: center;
+    margin-left: 6vw;
+    color: red;
   }
   .details{
     margin-left: 2vw;
@@ -161,18 +167,19 @@ img {
     width: 35vw;
     margin-left: 8vw;
     margin-top: 1.5vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    padding-bottom: 1vw;
   }
   .image-container {
     width: 80%;
     height: 70%;
     float: left;
-    margin: 25px 37px 20px 37px;
+    margin: 25px 37px 20px 55px;
   }
   .clear {
     position: absolute;
     margin-left: 39vw;
-    margin-top: -4.7vw;
+    margin-top: -4vw;
     height: 10vw;
     cursor: pointer;
     font-size: 1vw;
@@ -180,7 +187,7 @@ img {
   #continue-btn{
     position: relative;
     margin: 0 auto;
-    margin-top: 7.5vw;
+    margin-top: 8vw;
     margin-left: 8vw;
     margin-right: 0vw;
     font-size: 2vw;

@@ -36,9 +36,9 @@ const MainPage = () => {
 
         <div className="section offer-section">
             <h2 className="section-header">Choose project.</h2>
-            <OfferCard name="Basic" characters={1} charactersFormat="(.png,  .psd)" delivery={5} revisions={3} price={39.99}/>
-            <OfferCard name="Pro" characters="1K" delivery={8} revisions={5} price={299.99} pro={true}/>
-            <OfferCard name="Max" characters="10K" delivery={10} revisions={7} price={1239}/>
+            <OfferCard name="Basic" characters={1}ś delivery={5} revisions={2} price={49.99}/>
+            <OfferCard name="Pro" characters="1K" delivery={8} revisions={4} price={1499}/>
+            <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
         </div>
         <div className="section about-section">
             <h2 className="section-header">How it works?</h2>
@@ -49,17 +49,6 @@ const MainPage = () => {
             </div>
             
         </div>
-        {/* <div className="section trending-section">
-            <h2 className="section-header">Hottest NFT's.</h2>
-            <div className="trending">
-                <TrendingCard picture={boredApe} name="Bored Ape #2087"/>
-                <TrendingCard picture={cryptoPunk} name="CryptoPunk #7523"/>
-                <TrendingCard picture="" header=""/>
-                <TrendingCard picture="" header=""/>
-                <TrendingCard picture="" header=""/>
-            </div>
-            <p className="next-text"><span className="colorful-text">Your might be next!</span></p>
-        </div> */}
         <div className="section hook-section">
             <h2 className="section-header">NFT BOOM is coming!</h2>
             <div className="hook-container">
