@@ -2,13 +2,12 @@
     width: 65vw;
     height: auto;
     padding: 7vw;
-    box-shadow: 0px 5px 48px rgba(0, 0, 0, 0.301);
-    border-bottom: 6px solid transparent;
+    box-shadow: 0px 5px 55px rgba(212, 0, 255, 0.301);
     margin: 0 auto;
     margin-top: 10vw;
     margin-bottom: 10vw;
     z-index: 100;
-    border-radius: 12px;
+    border-radius: 30px;
   }
   .offer-card::before {
     display: block;
@@ -20,17 +19,18 @@
     margin-bottom: 10vw;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.288);
+    box-shadow: 10px 0 40px rgba(212, 0, 255, 0.301);
 }
 .button{
-  width: 30vw;
-  height: 10vw;
+  width: 50vw;
+  height: 14vw;
   margin-top: 5vw;
   border-radius: 10px;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 700;
   background-color: transparent;
   border: 2px solid #e40ab1;
+  color: white;
   cursor: pointer;
 }
 .button:hover{
@@ -48,20 +48,20 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-  .from{font-size: 3vw; color: #0000009a; font-weight: 400;}
+  .from{font-size: 3vw; color: #fcfcfc9a; font-weight: 400;}
   .format{font-size: 3vw;}
   .detail{padding-top: 4vw; font-size: 5.5vw; font-weight: 400;}
   .name {font-size: 7vw; padding: 0; font-weight: 700;}
-  .price {font-size: 7vw; font-weight: 700;}
-  .note{font-size: 3vw; margin-top: 5vw; font-weight: 400; color: #0000009a;}
+  .price {font-size: 7vw; font-weight: 700; margin-top: 1vw;}
+  .price-piece{font-size: 3vw; display: inline;}
+  .note{font-size: 3vw; margin-top: 5vw; font-weight: 400; color: #ffffff9a;}
 
   @media screen and (min-width: 1200px){
     .offer-card{
       width: 20vw;
       height: auto;
       padding: 2vw;
-      box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.356);
-      border-bottom: 6px solid transparent;
+      box-shadow: 5px 5px 40px 10px rgba(212, 0, 255, 0.356);
       margin: 3vw 3vw 10vw 3vw;
       border-radius: 20px;
     }
@@ -69,6 +69,7 @@
       height: 1.2vw;
       margin-top: -3.2vw;
       margin-bottom: 2vw;
+      box-shadow: 5px 5px 40px 10px rgba(204, 0, 255, 0.356);
   }
     .detail{padding-top: 1.5vw; font-size: 1.5vw; font-weight: 400;}
     .name {font-size: 2.5vw; padding: 0; font-weight: 700;}
@@ -82,6 +83,8 @@
       border-radius: 20px;
       font-size: 1vw;
       border: 3px solid #e40ab1;
+
     }
+    .price-piece{font-size: 1vw; font-weight: 400;}
     .note{font-size: 01vw; margin-top: 1.7vw; font-weight: 400; color: #0000009a;}
   }

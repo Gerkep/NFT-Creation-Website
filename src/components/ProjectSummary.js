@@ -3,7 +3,7 @@ import { useState } from "react";
 import '../style/Summary.css';
 import { connect } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
-import Paypal from './PayPal';
+import Paypal from './paypal/PayPal';
 
 let stripePromise;
 

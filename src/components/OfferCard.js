@@ -10,6 +10,13 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
             return "pro"
         }
     }
+    const costPerNFT = () => {
+        if(name=="Pro"){
+            return <p className="price-piece">($1,5/art)</p>
+        }else if(name=="Max"){
+            return <p className="price-piece">($0,38/art)</p>
+        }
+    }
 
     return(
         <div>
@@ -20,7 +27,7 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
                 <div className="detail delivery">Delivery in <b className="colorful-text">{delivery}</b> days</div>
                 <div className="detail revisions">Up to <b className="colorful-text">{revisions}</b> revisions*</div>
                 <div className="detail revisions"><b className="colorful-text">+</b>Video guide "how to mint NFT"</div>
-                <div className="detail price"><span className="from">from</span> ${price}</div>
+                <div className="detail price">${price}{costPerNFT()}</div>
                 <button onClick={() => selectProject(name)} className={`button ${isPro()}`}>Choose</button>
                 <p className="note">*May vary depending on the complexity of the project.</p>
             </div>

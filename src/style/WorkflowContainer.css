@@ -17,7 +17,7 @@
     border-radius: 20px;
   }
   .header { font-size: 8vw; text-align: center; margin-top: 3vw;}
-  .text { font-size: 5vw; margin-top: 2vw; text-align: center; color: rgba(0, 0, 0, 0.699); width: 70%; padding: 0 10% 0 10%;}
+  .text { font-size: 5vw; margin-top: 4vw; text-align: center; color: rgba(255, 255, 255, 0.774); width: 70%; padding: 0 10% 0 10%;}
 
   @media screen and (min-width: 1200px){
     .about-container{

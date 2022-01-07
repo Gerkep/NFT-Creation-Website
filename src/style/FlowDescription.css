@@ -6,7 +6,9 @@
     font-size: 3vw;
     padding: 2.5vw;
     margin-left: 6vw;
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .input{
@@ -16,7 +18,9 @@
     border-radius: 20px;
     padding: 2vw;
     font-size: 3vw;
-    border: solid 2px black;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     float: left;
 }
 .label{
@@ -96,7 +100,7 @@ img {
   .placeholder-preview,
   .render-preview {
     text-align: center;
-    background-color: #efebeb;
+    background-color: #161616;
     height: 100%;
     width: 86vw;
     margin-left: 6vw;

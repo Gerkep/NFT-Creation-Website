@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { userPaid } from "../actions";
 import { send } from "@emailjs/browser";
 class Success extends React.Component{
 
@@ -48,4 +47,4 @@ const mapStateToProps = state => {
     return {flow: state.flow};
 }
 
-export default connect(mapStateToProps, {userPaid})(Success);
+export default connect(mapStateToProps)(Success);

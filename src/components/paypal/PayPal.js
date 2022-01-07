@@ -1,5 +1,5 @@
 import { PayPalButtons } from "@paypal/react-paypal-js";
-import history from "../history";
+import history from "../../history";
 
 const PayPal = props => {
 

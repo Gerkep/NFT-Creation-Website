@@ -4,12 +4,9 @@ import {Link} from 'react-router-dom';
 
 import OfferCard from "./OfferCard";
 import WorkflowContainer from "./WorkflowContainer";
-// import TrendingCard from "./TrendingCard";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
-// import boredApe from "../images/boredape.png";
-// import cryptoPunk from "../images/cryptopunk.png";
 
 const MainPage = () => {
     return(
@@ -17,7 +14,7 @@ const MainPage = () => {
 
         <div className="navbar">
             <p className="logo">NFTiece</p>
-            <Link to="/project" className="btn nav-btn">Get started!</Link>
+            <Link to="/project" className="btn nav-btn"><span className="btn-text">Get Started!</span></Link>
         </div>
 
         <div className="welcome-page">
@@ -25,14 +22,14 @@ const MainPage = () => {
                 <div className="slogan">
                     <h1>We bring Your <br/>idea to <span className="colorful-text">NFT art.</span></h1>
                     <h3 className="desktop-description">We gathered best designers to create<br/> beautiful art designed to become NFT.</h3>
-                    <Link to="/project" className="btn desktop-main-btn">Get started!</Link>
+                    <Link to="/project" className="btn desktop-main-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
             </div>
             <div className="main-img">
                 <div className="eth-illustration"></div>
             </div>
         </div>
-        <Link to="/project" className="btn mobile-btn">Get started!</Link>
+        <Link to="/project" className="btn mobile-btn"><span className="btn-text">Get Started!</span></Link>
 
         <div className="section offer-section">
             <h2 className="section-header">Choose project.</h2>
@@ -41,13 +38,23 @@ const MainPage = () => {
             <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
         </div>
         <div className="section about-section">
-            <h2 className="section-header">How it works?</h2>
+            <h2 className="section-header">It's simple!</h2>
             <div className="workflow-section">
                 <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
                 <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
                 <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
             </div>
-            
+        </div>
+        <div className="section about-nfts-section">
+            <h2 className="section-header">About NFT art</h2>
+            <div className="about-nft-container">
+                <div className="nfts-image"></div>
+                <div div="about-nfts-content">
+                    <p>An NFT(non-fungible token), is a unique digital representation of a good — for our purposes, a work of art. It's akin to a certificate of authenticity or a deed and it's recorded on a blockchain. 
+                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses NFT art is really lucrative lately, thats why more and more people are trying to get on the train and earn millions. So don't wait. Start designing your NFT today!
+                    </p>
+                </div>
+            </div>
         </div>
         <div className="section hook-section">
             <h2 className="section-header">NFT BOOM is coming!</h2>
@@ -60,12 +67,12 @@ const MainPage = () => {
                         Reach us out and become next NFT millionaire.
                         Don't miss the opportunity. <br className="mobile-br"/><span className="colorful-text">You are still early!</span>
                     </div>
-                    <Link to="/project" className="btn mobile-btn" id="hook-btn">Get started!</Link>
+                    <Link to="/project" className="btn mobile-btn" id="hook-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
             </div>
         </div>
         <div className="footer">
-            <div className="footer-logo">LOGO</div>
+            <p className="logo footer-logo">NFTiece</p>
             <div className="footer-navbar">
                 <Link to="/project" className="footer-link" href="">Let's design!</Link>
                 <a className="footer-link" href="">Pricing</a>
