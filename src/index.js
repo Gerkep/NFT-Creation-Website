@@ -2,7 +2,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from 'redux';
-import { persistStore, persistReducer, createMigrate } from "redux-persist";
+import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import thunk from "redux-thunk";
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 import '../style/Summary.css';
 import { connect } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
+import Paypal from './PayPal';
 
 let stripePromise;
 
@@ -18,6 +19,13 @@ const ProjectSummary = (props) => {
     const [stripeError, setStripeError] = useState(null);
     const [isLoading, setLoading] = useState(false);
 
+    //product for paypal
+    const product = {
+        description: "Illustration collection ready to be minted as NFT's",
+        price: 49.99
+    }
+
+    //product for stripe
     const item = {
         price: "price_1KEgS0JJSIx1GH1o7JEHhU3G",
         quantity: 1
@@ -36,7 +44,7 @@ const ProjectSummary = (props) => {
     const checkoutOptions = {
         lineItems: [item],
         mode: "payment",
-        successUrl: `${window.location.origin}/`,
+        successUrl: `${window.location.origin}/success`,
         cancelUrl: `${window.location.origin}/project/summary`,
         customerEmail: `${props.flow.email}`
     }
@@ -45,6 +53,7 @@ const ProjectSummary = (props) => {
     const redirectToCheckout = async () => {
         setLoading(true);
 
+        //redirecting to stripe
         const stripe = await getStripe();
         const {error} = await stripe.redirectToCheckout(checkoutOptions);
         if(error) setStripeError(error.message);
@@ -64,6 +73,7 @@ const ProjectSummary = (props) => {
                     <p className="desc">{props.flow.description}</p>
                 </div>
                 <p className="summary-note">Quick note to a buyer. something after you purchase or send us your order without paying to discuss something blah blah blah.</p>
+                <div className="paypal-button-container"><Paypal product={product} /></div>
                 <button className="buy-btn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Buy"}</button>
             </div>
         )

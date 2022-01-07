@@ -9,7 +9,6 @@ import ProjectForm from "./ProjectForm";
 
 class ProjectDescription extends React.Component {
 
-
     onSubmit = (formValues) => {
         this.props.submitOrder(formValues);
     }

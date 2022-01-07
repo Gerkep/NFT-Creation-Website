@@ -4,7 +4,7 @@ const INITIAL_STATE = {
     email: null,
     description: null,
     image: null,
-    paid: false
+    paid: null
 }
 
 export default (state = INITIAL_STATE, action) => {
