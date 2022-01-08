@@ -49,15 +49,15 @@ const MainPage = () => {
             <h2 className="section-header">About NFT art</h2>
             <div className="about-nft-container">
                 <div className="nfts-image"></div>
-                <div div="about-nfts-content">
-                    <p>An NFT(non-fungible token), is a unique digital representation of a good — for our purposes, a work of art. It's akin to a certificate of authenticity or a deed and it's recorded on a blockchain. 
-                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses NFT art is really lucrative lately, thats why more and more people are trying to get on the train and earn millions. So don't wait. Start designing your NFT today!
+                <div className="about-nfts-content">
+                    <p>An NFT(non-fungible token), is a unique digital representation of a good — for our purposes, a work of art. It's akin to a certificate of authenticity or a deed and it's recorded on a blockchain. <br/><br/>
+                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses, NFT art can be very pricey, that's why more and more people are trying to get on the train and earn millions. So don't wait. Start designing your NFT today!
                     </p>
                 </div>
             </div>
         </div>
         <div className="section hook-section">
-            <h2 className="section-header">NFT BOOM is coming!</h2>
+            <h2 className="section-header">NFT BOOM is here!</h2>
             <div className="hook-container">
                 <div className="best-illustration"></div>
                 <div className="hook-content">
@@ -74,22 +74,26 @@ const MainPage = () => {
         <div className="footer">
             <p className="logo footer-logo">NFTiece</p>
             <div className="footer-navbar">
-                <Link to="/project" className="footer-link" href="">Let's design!</Link>
-                <a className="footer-link" href="">Pricing</a>
-                <a className="footer-link" href="">Workflow</a>
+                    <Link to="/project" className="footer-link footer-link-desktop" href="">Design</Link>
+                    <a className="footer-link footer-link-desktop" href="">Pricing</a>
+                    <a className="footer-link footer-link-desktop" href="">Workflow</a>
+                    <a className="footer-link" href="">Contact us</a>
+                    <a className="footer-link" href="">Privacy policy</a>
             </div>
             <div className="social-media">
                     <a className="media-icon twitter" href=""></a>
                     <a className="media-icon instagram" href=""></a>
                     <a className="media-icon facebook" href=""></a>
             </div>
+
         </div>
         <div className="footer-under">
+        <div className="copyright">Designed and developed by Piotr Gerke</div>
             <div className="payment-methods">
-                <div className="payment-icon">P</div>
-                <div className="payment-icon">P</div>
+                <div className="payment-icon" id="paypal"></div>
+                <div className="payment-icon" id="stripe"></div>
             </div>
-            <div className="copyright">@2022 Piotr Gerke</div>
+            
         </div>
         
         </div> 

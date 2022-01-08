@@ -1,19 +1,24 @@
+.flow{position: absolute; width: 100%; top: 0; left: 0;}
+.logo-flow{
+    position: absolute;
+    right: 5vw;
+    top: 3vw;
+    font-size: 2vw;
+}
 .flow-header{
     margin-top: 10vw;
     font-size: 10vw;
 }
-
 .content{
     padding-top: 7vh;
     margin: 0 auto;
-    margin-bottom: 15vw;
 }
 
 @media screen and (min-width: 1200px) {
     .flow-header{
         text-align: center;
-        font-size: 5vw;
-        margin-top: 3vw;
+        font-size: 3vw;
+        margin-top: 5vw;
     }
     .content{
         padding-top: 3vw;

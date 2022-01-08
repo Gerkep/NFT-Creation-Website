@@ -79,20 +79,24 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
-.about-nft-container{
-    display: flex;
-}
 .nfts-image{
-    background-image: url("../images/about-nfts.png");
+    background-image: url("../images/nfts-mobile.png");
+    margin: 0 auto;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 58vw;
-    height: 40vw;
-
+    width: 85vw;
+    height: 55vw;
+    margin-top: 10vw;
+}
+.about-nfts-content{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 6vw;
+    color: rgba(255, 255, 255, 0.801);
 }
 .best-illustration{
-    background-image: url("../images/calender-dynamic-gradient.png");
+    background-image: url("../images/money-bag-dynamic-gradient.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -112,10 +116,11 @@ a{
     width: 90%;
     font-size: 6vw;
     margin: 5vw 0 8vw 0;
+    color: rgba(255, 255, 255, 0.808);
 }
 .footer{
     width: 100%;
-    height: 70vw;
+    height: auto;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
    background-color: black;
@@ -132,11 +137,10 @@ a{
     width: 100%;
 }
 .media-icon{
-    background-image: url("../images/twitter.png");
     background-size: cover;
     height: 10vw;
     width: 10vw;
-    margin: 5vw;
+    margin: 7vw;
 }
 .instagram{
     background-image: url("../images/instagram.png");
@@ -147,15 +151,37 @@ a{
 .facebook{
     background-image: url("../images/facebook.png");
 }
-.footer{height: auto;}
 .footer-logo{font-size: 8vw;}
 .footer-navbar{display: flex; flex-wrap: wrap; margin-top: 5vw;} 
-.footer-link{width: 100%; text-align: center; color: white; font-size: 5vw; margin: 4vw 0 4vw 0;}
+.footer-link{width: 100%; text-align: center; color: rgba(255, 255, 255, 0.829); font-size: 5vw; margin: 4vw 0 4vw 0;}
+.footer-link-desktop{display: none;}
 .footer-under{
     background-color: black;
     width: 100%;
     color: rgba(255, 255, 255, 0.603);
-    margin-top: -1vw;
+    padding-bottom: 5vw;
+}
+.payment-methods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vw;
+}
+#paypal{
+    background-image: url("../images/paypal.png");
+    width: 20vw;
+    height: 9vw;
+}
+#stripe{
+    background-image: url("../images/stripe.png");
+}
+.payment-icon{
+    margin: 0 4vw 0 4vw;
+    width: 14vw;
+    height: 10vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media screen and (min-width: 1200px) {
     body{
@@ -195,7 +221,6 @@ a{
     .desktop-description{
         display: block;
         font-size: 1.8vw;
-        color: rgba(0, 0, 0, 0.699);
         margin-top: 1vw;
         font-weight: 400;
     }
@@ -216,7 +241,19 @@ a{
     .workflow-section{
         display: flex;
     }
-    .next-text{font-size: 3vw; text-align: center;}
+    .about-nft-container{
+        display: flex;
+    }
+    .nfts-image{
+        background-image: url("../images/nfts.png");
+        width: 70vw;
+        height: 40vw;
+        margin-top: 0;
+    }
+    .about-nfts-content{
+        font-size: 1.8vw;
+        margin-top: 5vw;
+    }
     .hook-container{
         display: grid; 
         grid-template-columns: 0.8fr 1.4fr; 
@@ -228,64 +265,38 @@ a{
     .best-illustration { grid-area: best-illustration;  height: 25vw;}
     .hook { grid-area: hook; font-size: 1.8vw; margin: 8vw 8vw 0 0;}
     .footer{
-        width: 100%;
-        height: 10vw;
-        display: grid; 
-        grid-template-columns: 0.6fr 1.2fr 1fr; 
-        grid-template-rows: 1fr; 
-        grid-template-areas: 
-          "footer-logo footer-navbar social-media";
-          padding: 0;
-          justify-content: center;
-          align-items: center;
-    }
-    .footer-logo{
-        grid-area: footer-logo;
-        margin-left: 5vw;
-        font-size: 3vw;
-    }
-    .social-media{
-        grid-area: social-media;
         display: flex;
-        justify-content: center;
-        width: 100%;
         flex-wrap: wrap;
-    }
-    .footer-navbar { 
-        grid-area: footer-navbar; 
-        width: auto;
-        display: flex;
-        flex-wrap: nowrap;
         justify-content: center;
-        margin: 0;
+        padding-top: 5vw;
     }
-    .footer-link{
-        color: white;
-        margin: 0 4vw 0 4vw;
-        font-size: 1vw;
-    }
-    .media-text{
-        width: 100%;
-    }
+    .footer-logo{font-size: 5vw; margin: 0;}
     .media-icon{
-        background-size: cover;
-        height: 3vw;
-        width: 3vw;
-        margin: 0vw 2vw 0 2vw;
+        height: 5vw;
+        width: 5vw;
+        margin: 5vw;
     }
+    .footer-navbar{flex-wrap: nowrap; margin-top: 1vw; width: 100%; justify-content: center;} 
+    .footer-link{width: 14vw; text-align: center;font-size: 1.8vw; margin-bottom: 0;}
+    .footer-link-desktop{display: block;}
     .footer-under{
-        height: 2vw;
+        padding-bottom: 2vw;
     }
-    .copyright{
-        margin-left: 4vw;
-        font-size: 1vw;
-    }
+    .copyright{text-align: center; font-size: 1.2vw;}
     .payment-methods{
+        width: 100%;
         display: flex;
-        position: absolute;
-        right: 5vw;
+        margin-top: 0;
+        justify-content: left;
+    }
+    #paypal{
+        background-image: url("../images/paypal.png");
+        width: 5vw;
+        height: 3vw;
     }
     .payment-icon{
-        margin: 0 2vw 0 2vw;
+        margin: -2.2vw 2vw 0 2vw;
+        width: 4vw;
+        height: 3vw;
     }
 }
