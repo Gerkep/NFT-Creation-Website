@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { send } from "@emailjs/browser";
+import '../style/Success.css'
 class Success extends React.Component{
 
     // componentDidUpdate(){
@@ -36,8 +37,10 @@ class Success extends React.Component{
     render(){
         return(
             <div>
-                <h1 className="header">Success</h1>
-                <h2>{this.props.flow.project}</h2>
+                <h1 className="header success-header">Success!</h1>
+                <h2 className="success-message"><span className="colorful-text">Thank you</span> for choosing us as your digital artists!</h2>
+                <div className="tick-illustration"></div>
+                <p className="success-info">We will contact you ASAP on this <br/>email: {this.props.flow.email} </p>
             </div>
         )
     }

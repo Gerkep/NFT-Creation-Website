@@ -1,0 +1,24 @@
+.success-header{
+    margin-top: 10vh;
+    font-size: 10vw;
+}
+.success-message{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+.tick-illustration{
+    background-image: url("../images/tick.png");
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 30vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+.success-info{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255, 0.8);
+}

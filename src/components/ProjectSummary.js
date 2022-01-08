@@ -66,13 +66,14 @@ const ProjectSummary = (props) => {
             <div>
                 <div className="summary-container">
                     <h2 className="summary-header">Let's do it!</h2>
+                    <div className="card-illustration"></div>
                     <h2 className="order-greeting">Hey <span className="colorful-text" id="customer-email">{props.flow.email}</span>!</h2>
                     <h2 className="order-text">Let's start designing your <span className="colorful-text">{props.flow.project}</span> project in <span className="colorful-text">{props.flow.style}</span> style!</h2>
                     <p className="summary-note">Please ensure, that your email adress is correct. That's how we will be able to identify and contact you during the design proceess.</p>
                     <div className="paypal-button-container"><Paypal product={product} /></div>
                     <p>or</p>
                     <button className="buybtn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Stripe"}</button>
-                    <p className="note">By buying our product you accept our privacy policy.</p>
+                    <p className="note">By buying our service you accept <a href="#">privacy policy</a>.</p>
                 </div>
             </div>
         )
