@@ -7,7 +7,7 @@ class Success extends React.Component{
     // componentDidUpdate(){
     //     this.sendEmail();
     // }
-    // componentDidMount(){
+    // componentDidMount(){👀
     //     this.sendEmail();
     // }
 
