@@ -7,7 +7,7 @@ import "../style/FlowStyle.css";
 const StyleContainer = ({image, header, selectStyle, flow}) => {
     return(
         <button onClick={() => selectStyle(header)} id="btn" className="style-container">
-            <img className="image" src={image}></img>
+            <img className="image" alt="style representation" src={image}></img>
             <h2 className="header">{header}</h2>
         </button>
     )

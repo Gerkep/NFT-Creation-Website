@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import { send } from "@emailjs/browser";
 class Success extends React.Component{
 
-    componentDidUpdate(){
-        this.sendEmail();
-    }
-    componentDidMount(){
-        this.sendEmail();
-    }
+    // componentDidUpdate(){
+    //     this.sendEmail();
+    // }
+    // componentDidMount(){
+    //     this.sendEmail();
+    // }
 
 
     sendEmail() {

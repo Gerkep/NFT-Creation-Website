@@ -7,11 +7,11 @@ const PayPal = props => {
 
     return <PayPalButtons 
     style={{
-        color: "silver",
+        color: "white",
         layout: "horizontal",
         height: 48,
         tagline: false,
-        shape: "pill"
+        shape: "pill",
     }}
     onClick={(data, actions) => {
         return actions.resolve()

@@ -31,13 +31,14 @@
 
 @media screen and (min-width: 1200px) {
     .style-container{
-        width: 25vw;
-        margin-top: 3vw;
-        height: 30vw;
-        padding: 0;
+        width: 20vw;
+        margin: 5vw 3vw 0 3vw;
+        height: 25vw;
+        padding: 3vw 0 4vw 0;
     }
     .image{
-        width: 70%;
-        margin: 1vw 0 1vw 0;
+        width: 100%;
+        height: auto;
+        margin: 1vw 0 0vw 0;
     }
 }

@@ -64,17 +64,16 @@ const ProjectSummary = (props) => {
 
     return(
             <div>
-                <h2 className="flow-header">Summary</h2>
                 <div className="summary-container">
-                    <h3 className="aspect">Plan: {props.flow.project}</h3>
-                    <h3 className="aspect">Style: {props.flow.style}</h3>
-                    <h3 className="aspect">Email: {props.flow.email}</h3>
-                    <h3 className="aspect">Description: </h3>
-                    <p className="desc">{props.flow.description}</p>
+                    <h2 className="summary-header">Let's do it!</h2>
+                    <h2 className="order-greeting">Hey <span className="colorful-text" id="customer-email">{props.flow.email}</span>!</h2>
+                    <h2 className="order-text">Let's start designing your <span className="colorful-text">{props.flow.project}</span> project in <span className="colorful-text">{props.flow.style}</span> style!</h2>
+                    <p className="summary-note">Please ensure, that your email adress is correct. That's how we will be able to identify and contact you during the design proceess.</p>
+                    <div className="paypal-button-container"><Paypal product={product} /></div>
+                    <p>or</p>
+                    <button className="buybtn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Stripe"}</button>
+                    <p className="note">By buying our product you accept our privacy policy.</p>
                 </div>
-                <p className="summary-note">Quick note to a buyer. something after you purchase or send us your order without paying to discuss something blah blah blah.</p>
-                <div className="paypal-button-container"><Paypal product={product} /></div>
-                <button className="buy-btn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Buy"}</button>
             </div>
         )
     }

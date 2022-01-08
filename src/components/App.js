@@ -15,7 +15,7 @@ import history from "../history";
 
 const App = () =>{
     return(
-        <PayPalScriptProvider options={{"client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
+        <PayPalScriptProvider options={{"client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID, components: 'buttons'}}>
             <div>
                 <Router history={history}>
                     <div>

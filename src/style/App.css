@@ -167,12 +167,12 @@ a{
     justify-content: center;
     margin-top: 5vw;
 }
-#paypal{
+#payment-method-1{
     background-image: url("../images/paypal.png");
     width: 20vw;
     height: 9vw;
 }
-#stripe{
+#payment-method-1{
     background-image: url("../images/stripe.png");
 }
 .payment-icon{
@@ -289,7 +289,7 @@ a{
         margin-top: 0;
         justify-content: left;
     }
-    #paypal{
+    #payment-method-1{
         background-image: url("../images/paypal.png");
         width: 5vw;
         height: 3vw;

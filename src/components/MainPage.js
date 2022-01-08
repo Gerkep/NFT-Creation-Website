@@ -90,8 +90,8 @@ const MainPage = () => {
         <div className="footer-under">
         <div className="copyright">Designed and developed by Piotr Gerke</div>
             <div className="payment-methods">
-                <div className="payment-icon" id="paypal"></div>
-                <div className="payment-icon" id="stripe"></div>
+                <div className="payment-icon" id="payment-method-1"></div>
+                <div className="payment-icon" id="payment-method-2"></div>
             </div>
             
         </div>

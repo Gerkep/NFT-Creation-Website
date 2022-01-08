@@ -11,9 +11,9 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
         }
     }
     const costPerNFT = () => {
-        if(name=="Pro"){
+        if(name==="Pro"){
             return <p className="price-piece">($1,5/art)</p>
-        }else if(name=="Max"){
+        }else if(name==="Max"){
             return <p className="price-piece">($0,38/art)</p>
         }
     }
