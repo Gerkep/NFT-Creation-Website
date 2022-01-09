@@ -3,8 +3,7 @@ const INITIAL_STATE = {
     style: null,
     email: null,
     description: null,
-    image: null,
-    paid: null
+    image: null
 }
 
 export default (state = INITIAL_STATE, action) => {

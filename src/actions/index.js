@@ -14,5 +14,3 @@ export const submitOrder = (formValues) => (dispatch, getState) => {
     dispatch({type: 'ORDER_SUBMITTED', payload: formValues});
     history.push('/project/summary');
 }
-
-

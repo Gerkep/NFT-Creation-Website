@@ -7,20 +7,20 @@ class Success extends React.Component{
     // componentDidUpdate(){
     //     this.sendEmail();
     // }
-    // componentDidMount(){👀
+    // componentDidMount(){
     //     this.sendEmail();
     // }
 
 
     sendEmail() {
-        if(this.props.flow.project && this.state.count===0){
+        if(this.props.flow.project){
             const flow = this.props.flow;
             let templateParams = {
                 project: `${flow.project}`,
                 email: `${flow.email}`,
                 style: `${flow.style}`,
                 image: `${flow.image}`,
-                description: `${flow.description}`
+                description: `${flow.description}`,
             };
                         
             send('service_h4nrxmt', 'template_zv9b0qm', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
