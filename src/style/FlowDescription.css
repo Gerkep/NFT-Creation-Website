@@ -5,7 +5,7 @@
     margin-top: 3vw;
     font-size: 3vw;
     padding: 2.5vw;
-    margin-left: 3vw;
+    margin-left: 6vw;
     border: solid 2px rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     color: white;
@@ -21,6 +21,16 @@
     border: solid 2px rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     float: left;
+}
+.error-form{
+  position: absolute;
+  text-align: left;
+  margin-left: 8vw;
+  margin-top: 17vw;
+  color: rgb(255, 0, 242);
+}
+.field-error{
+  border: 2px solid rgb(255, 0, 242);
 }
 .label{
     text-align: left;
@@ -143,6 +153,11 @@ img {
       margin: 1.5vw 12vw 3vw 4vw;
       padding: 1vw;
       font-size: 1.2vw;
+    }
+    .error-form{
+      position: absolute;
+      margin-top: 5.5vw;
+      margin-left: 5vw;
     }
     .preview-container {
       height: 23vw;

@@ -1,6 +1,6 @@
 import React from "react";
 import DropZoneField from "./dropzone/DropzoneField";
-import { Field, reduxForm } from "redux-form";
+import { Field, formValues, reduxForm } from "redux-form";
 
 
 import "../style/FlowDescription.css"
@@ -31,14 +31,28 @@ class ProjectDescription extends React.Component {
             </div>
         )
     }
-    renderInput({input, label}){
+    renderError = ({error, touched}) => {
+        console.log(touched);
+        if(error && touched){
+            return(
+                <div>
+                    <div className="error-form">{error}</div>
+                </div>
+            );
+        }
+    }
+
+    renderInput = ({input, label, meta}) => {
+        const className = `input ${meta.error && meta.touched ? 'field-error': ''}`
         return(
             <div>
                 <h2 className="label">{label}</h2>
-                <input className="input" {...input} autoComplete="off" placeholder="Email"/>
+                <input className={className} {...input} autoComplete="off" placeholder="Email"/>
+                {this.renderError(meta)}
             </div>
-        )
+        );
     }
+
     onSubmit = (formValues) => {
         this.props.onSubmit(formValues);
     }
@@ -48,7 +62,7 @@ class ProjectDescription extends React.Component {
             <div>
                     <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="form">
                         <div>
-                            <Field className="email-input" name="email" component={this.renderInput} label="Enter Email:"/>
+                            <Field name="email" className="email-input" component={this.renderInput} label="Enter Email:"/>
                             <Field className="description-input" name="description" component={this.renderTextfield} label="Describe Idea:"/>
                         </div>
                         <div>
@@ -76,7 +90,17 @@ class ProjectDescription extends React.Component {
         )
     }
 }
+const validate = formValues => {
+    const errors = {};
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if(!(formValues.email) || !(formValues.email.match(mailFormat))){
+        errors.email = 'Enter valid email';
+    }
+    return errors;
+};
 
 export default reduxForm({
-    form: 'description'
+    form: 'description',
+    validate
 })(ProjectDescription);

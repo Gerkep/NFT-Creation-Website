@@ -38,9 +38,10 @@ class Success extends React.Component{
         return(
             <div>
                 <h1 className="header success-header">Success!</h1>
-                <h2 className="success-message"><span className="colorful-text">Thank you</span> for choosing us as your digital artists!</h2>
                 <div className="tick-illustration"></div>
-                <p className="success-info">We will contact you ASAP on this <br/>email: {this.props.flow.email} </p>
+                <h2 className="success-message"><span className="colorful-text">Thank you</span> for choosing us as your digital artists!</h2>
+               
+                <p className="success-info">We will contact you ASAP at this <br/>email: {this.props.flow.email} </p>
             </div>
         )
     }

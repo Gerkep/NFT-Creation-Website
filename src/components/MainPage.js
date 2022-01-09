@@ -59,16 +59,14 @@ const MainPage = () => {
         <div className="section hook-section">
             <h2 className="section-header">NFT BOOM is here!</h2>
             <div className="hook-container">
-                <div className="best-illustration"></div>
                 <div className="hook-content">
-                    <div className="hook">
-                        Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>, 
+                        <p className="hook">Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>,<br className="desktop-br"/> 
                         so if you have an idea for NFT don't wait and join this big trend! 
                         Reach us out and become next NFT millionaire.
-                        Don't miss the opportunity. <br className="mobile-br"/><span className="colorful-text">You are still early!</span>
-                    </div>
+                        Don't miss the opportunity. <br/><span className="colorful-text">You are still early!</span></p>
                     <Link to="/project" className="btn mobile-btn" id="hook-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
+                <div className="best-illustration"></div>
             </div>
         </div>
         <div className="footer">
@@ -76,9 +74,9 @@ const MainPage = () => {
             <div className="footer-navbar">
                     <Link to="/project" className="footer-link footer-link-desktop" href="">Design</Link>
                     <a className="footer-link footer-link-desktop" href="">Pricing</a>
+                    <a className="footer-link" href="">Privacy policy</a>
                     <a className="footer-link footer-link-desktop" href="">Workflow</a>
                     <a className="footer-link" href="">Contact us</a>
-                    <a className="footer-link" href="">Privacy policy</a>
             </div>
             <div className="social-media">
                     <a className="media-icon twitter" href=""></a>

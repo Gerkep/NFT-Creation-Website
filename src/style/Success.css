@@ -6,6 +6,8 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 10vh;
+    text-align: center;
+    font-size: 5.5vw;
 }
 .tick-illustration{
     background-image: url("../images/tick.png");
@@ -14,11 +16,33 @@
     height: 30vw;
     width: 30vw;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 .success-info{
     width: 80%;
     margin: 0 auto;
     margin-top: 5vh;
     color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+@media screen and (min-width: 1200px) {
+    .success-header{
+        font-size: 7vw;
+    }
+    .success-message{
+        font-size: 3vw;
+        width: 40vw;
+        margin-top: 5vw;
+    }
+    .tick-illustration{
+        width: 15vw;
+        height: 15vw;
+        margin-top: 5vw;
+    }
+    .success-info{
+        font-size: 1.5vw;
+        margin-top: 5vw;
+    }
 }
