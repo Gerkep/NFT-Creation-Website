@@ -2,11 +2,13 @@ import React from "react";
 import '../style/App.css';
 import {Link} from 'react-router-dom';
 
+import Modal from "./Modal";
 import OfferCard from "./OfferCard";
 import WorkflowContainer from "./WorkflowContainer";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
+
 
 const MainPage = () => {
     return(
@@ -93,7 +95,7 @@ const MainPage = () => {
             </div>
             
         </div>
-        
+        <Modal />
         </div> 
     )
 }
