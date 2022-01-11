@@ -10,6 +10,7 @@ import ProjectSummary from "./ProjectSummary";
 import ProjectStyle from "./ProjectStyle";
 import Success from "./Success";
 import history from "../history";
+import Modal from "./Modal";
 
 
 
@@ -25,6 +26,8 @@ const App = () =>{
                         <Route path="/project/description" exact component={ProjectDescription}/>
                         <Route path="/project/summary" exact component={ProjectSummary}/>
                         <Route path="/success" exact component={Success}/>
+                        <Route path="/main" component={MainPage}/>
+                        <Route path="/main/contact" exact component={Modal} />
                     </div>
                 </Router>
             </div>

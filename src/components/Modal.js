@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Field, formValues, reduxForm } from "redux-form";
+import history from '../history';
 
 import "../style/Modal.css";
 
@@ -9,17 +10,16 @@ class Modal extends React.Component {
     renderTextfield({input, label}){
         return(
             <div className="description-container">
-                <h2 className="label">{label}</h2>
-                <textarea className="description" {...input} placeholder="Description"/>
+                <h2 className="label modal-label">{label}</h2>
+                <textarea className="description" id="modal-description" {...input} placeholder="Message"/>
             </div>
         )
     }
     renderError = ({error, touched}) => {
-        console.log(touched);
         if(error && touched){
             return(
                 <div>
-                    <div className="error-form">{error}</div>
+                    <div className="error-form" id="modal-er">{error}</div>
                 </div>
             );
         }
@@ -29,37 +29,28 @@ class Modal extends React.Component {
         const className = `input ${meta.error && meta.touched ? 'field-error': ''}`
         return(
             <div>
-                <h2 className="label">{label}</h2>
-                <input className={className} {...input} autoComplete="off" placeholder="Email"/>
+                <h2 className="label modal-label">{label}</h2>
+                <input className={className} id="modal-email" {...input} autoComplete="off" placeholder="Email"/>
                 {this.renderError(meta)}
             </div>
         );
     }
     onSubmit = (formValues) => {
-        this.props.onSubmit(formValues);
+        console.log(formValues)
     }
 
 
     render(){
         return ReactDOM.createPortal(
-            <div className="modal">
+            <div onClick={() => history.push("/")} className="modal">
                 <div className="modal-container">
-                <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="form">
-                            <div>
-                                <Field name="email" className="email-input" component={this.renderInput} label="Enter Email:"/>
-                                <Field className="description-input" name="description" component={this.renderTextfield} label="Describe Idea:"/>
-                            </div>
-                            <div>
-                                <button
-                                    type="button"
-                                    className="uk-button uk-button-default uk-button-large clear"
-                                    disabled={this.props.pristine || this.props.submitting}
-                                    onClick={this.resetForm}
-                                >
-                                Clear
-                                </button>
-                                <button className="btn continue" id="continue-btn">Continue</button>
-                            </div>
+                    <h2 className="modal-header">Message</h2>
+                    <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="form" id="modal-form">
+                        <div>
+                            <Field name="email" className="email-input" component={this.renderInput} label="Enter Email:"/>
+                            <Field className="description-input"  name="message" component={this.renderTextfield} label="Message:"/>
+                        </div>
+                        <button className="btn modal-btn">Send</button>
                     </form>
                 </div>
             </div>,
@@ -80,6 +71,6 @@ const validate = formValues => {
 };
 
 export default reduxForm({
-    form: 'description',
+    form: 'message',
     validate
 })(Modal);

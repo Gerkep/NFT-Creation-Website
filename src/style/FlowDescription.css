@@ -27,10 +27,10 @@
   text-align: left;
   margin-left: 8vw;
   margin-top: 17vw;
-  color: rgb(255, 0, 242);
+  color: rgba(212, 0, 255, 0.74);
 }
 .field-error{
-  border: 2px solid rgb(255, 0, 242);
+  border: 2px solid rgba(212, 0, 242, 0.507);
 }
 .label{
     text-align: left;
