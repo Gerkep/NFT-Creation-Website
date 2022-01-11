@@ -61,6 +61,7 @@ const MainPage = () => {
         <div className="section hook-section">
             <h2 className="section-header">NFT BOOM is here!</h2>
             <div className="hook-container">
+            <div className="best-illustration" id="mobile-illustration"></div>
                 <div className="hook-content">
                         <p className="hook">Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>,<br className="desktop-br"/> 
                         so if you have an idea for NFT don't wait and join this big trend! 
@@ -68,7 +69,7 @@ const MainPage = () => {
                         Don't miss the opportunity. <br/><span className="colorful-text">You are still early!</span></p>
                     <Link to="/project" className="btn mobile-btn" id="hook-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
-                <div className="best-illustration"></div>
+                <div className="best-illustration" id="desktop-illustration"></div>
             </div>
         </div>
         <div className="footer">
@@ -78,7 +79,7 @@ const MainPage = () => {
                     <a className="footer-link footer-link-desktop" href="">Pricing</a>
                     <a className="footer-link" href="">Privacy policy</a>
                     <a className="footer-link footer-link-desktop" href="">Workflow</a>
-                    <a className="footer-link" href="">Contact us</a>
+                    <Link className="footer-link" to="/main/contact">Contact us</Link>
             </div>
             <div className="social-media">
                     <a className="media-icon twitter" href=""></a>

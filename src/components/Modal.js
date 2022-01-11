@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Field, formValues, reduxForm } from "redux-form";
+import { send } from "@emailjs/browser";
 import history from '../history';
 
 import "../style/Modal.css";
@@ -35,15 +36,33 @@ class Modal extends React.Component {
             </div>
         );
     }
-    onSubmit = (formValues) => {
-        console.log(formValues)
+
+    sendEmail({email, message}) {
+            let templateParams = {
+                email: `${email}`,
+                message: `${message}`,
+            };
+                        
+            send('service_h4nrxmt', 'template_ckgdmxk', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    history.push("/main/contact/success");
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert("Something went wrong ;(. Contact us: nfties@gmail.com.")
+                });  
     }
 
+    onSubmit = (formValues) => {
+        console.log(formValues)
+        this.sendEmail(formValues);
+    }
 
     render(){
         return ReactDOM.createPortal(
-            <div onClick={() => history.push("/")} className="modal">
+            <div className="modal">
                 <div className="modal-container">
+                <div className="modal-close"onClick={() => history.push("/")}></div>
                     <h2 className="modal-header">Message</h2>
                     <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="form" id="modal-form">
                         <div>

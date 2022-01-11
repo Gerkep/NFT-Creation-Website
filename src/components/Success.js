@@ -29,9 +29,7 @@ class Success extends React.Component{
                 }, function(error) {
                     console.log('FAILED...', error);
                 });  
-        }else {
-        console.log(" ");
-        }  
+        }
     }
 
     render(){

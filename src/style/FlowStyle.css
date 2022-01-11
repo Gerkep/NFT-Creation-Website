@@ -4,7 +4,7 @@
     margin-top: 10vw;
     margin-bottom: 10vw;
     border-radius: 20px;
-    padding: 5vw 0 8vw 0;
+    padding: 3vw 0 3vw 0;
     background-color: rgb(0, 0, 0);
     border: none;
 }
@@ -31,10 +31,9 @@
 
 @media screen and (min-width: 1200px) {
     .style-container{
-        width: 20vw;
+        width: 25vw;
         margin: 5vw 3vw 0 3vw;
-        height: 25vw;
-        padding: 3vw 0 12vw 0;
+        height: 30vw;
     }
     .image{
         width: 100%;

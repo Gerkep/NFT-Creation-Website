@@ -4,7 +4,7 @@ import { selectStyle } from "../actions";
 import "../style/FlowStyle.css";
 
 
-const StyleContainer = ({image, header, selectStyle, flow}) => {
+const StyleContainer = ({image, header, selectStyle}) => {
     return(
         <button onClick={() => selectStyle(header)} id="btn" className="style-container">
             <img className="image" alt="style representation" src={image}></img>

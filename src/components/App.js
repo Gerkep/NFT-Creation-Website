@@ -11,6 +11,7 @@ import ProjectStyle from "./ProjectStyle";
 import Success from "./Success";
 import history from "../history";
 import Modal from "./Modal";
+import MessageSent from "./MessageSent";
 
 
 
@@ -28,6 +29,7 @@ const App = () =>{
                         <Route path="/success" exact component={Success}/>
                         <Route path="/main" component={MainPage}/>
                         <Route path="/main/contact" exact component={Modal} />
+                        <Route path="/main/contact/success" exact component={MessageSent} />
                     </div>
                 </Router>
             </div>
