@@ -4,33 +4,50 @@ import { send } from "@emailjs/browser";
 import '../style/Success.css'
 class Success extends React.Component{
 
-    // componentDidUpdate(){
-    //     this.sendEmail();
-    // }
-    // componentDidMount(){
-    //     this.sendEmail();
-    // }
+    componentDidUpdate(){
+        this.sendEmail();
+    }
+    componentDidMount(){
+        this.sendEmail();
+       
+    }
 
 
-    sendEmail() {
-        if(this.props.flow.project){
+    sendEmail = () => {
+        if(this.props.flow.email){
             const flow = this.props.flow;
+            let price = 0;
+            if(flow.project==="Basic"){
+                price = "$49.99"
+            }else if(flow.project === "Pro"){
+                price = "$1499.00"
+            }else if(flow.project === "Max"){
+                price = "$3799.00"
+            }
             let templateParams = {
                 project: `${flow.project}`,
                 email: `${flow.email}`,
                 style: `${flow.style}`,
                 image: `${flow.image}`,
                 description: `${flow.description}`,
+                price: `${price}`
             };
                         
             send('service_h4nrxmt', 'template_zv9b0qm', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
+                    send('service_h4nrxmt', 'template_ckgdmxk', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });  
                 }, function(error) {
                     console.log('FAILED...', error);
                 });  
         }
     }
+
 
     render(){
         return(

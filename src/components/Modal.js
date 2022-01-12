@@ -43,7 +43,7 @@ class Modal extends React.Component {
                 message: `${message}`,
             };
                         
-            send('service_h4nrxmt', 'template_ckgdmxk', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
+            send('service_h4nrxmt', 'template_zv9b0qm', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     history.push("/main/contact/success");
@@ -54,8 +54,7 @@ class Modal extends React.Component {
     }
 
     onSubmit = (formValues) => {
-        console.log(formValues)
-        this.sendEmail(formValues);
+        // this.sendEmail(formValues);
     }
 
     render(){

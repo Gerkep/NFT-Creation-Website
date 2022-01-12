@@ -1,6 +1,6 @@
 import React from "react";
 import DropZoneField from "./dropzone/DropzoneField";
-import { Field, formValues, reduxForm } from "redux-form";
+import { Field, reduxForm } from "redux-form";
 
 import "../style/FlowDescription.css"
 
@@ -10,8 +10,6 @@ class ProjectDescription extends React.Component {
     state = { imageFile: [] };
     
   handleOnDrop = (newImageFile, onChange) => {
-    var reader = new FileReader();
-      console.log(newImageFile);
     const imageFile = {
       file: newImageFile[0],
       name: newImageFile[0].name,
@@ -33,7 +31,6 @@ class ProjectDescription extends React.Component {
         )
     }
     renderError = ({error, touched}) => {
-        console.log(touched);
         if(error && touched){
             return(
                 <div>

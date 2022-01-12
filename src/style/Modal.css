@@ -70,6 +70,7 @@
     font-size: 3vw;
     text-align: center;
 }
+#message-header{margin-top: 4vw;}
 .modal-close{
     width: 1.5vw;
     height: 1.5vw;
@@ -101,6 +102,8 @@
     border-radius: 20px;
     margin-top: 3vw;
 }
+#message-tick{margin-top: 4vw; width: 12vw; height: 12vw; margin-bottom: 4vw;}
+#message-button{margin-top: 4vw; margin-left: 12.1vw;}
 #modal-form{
     display: flex;
     justify-content: center;

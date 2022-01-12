@@ -11,9 +11,9 @@ class MessageSent extends React.Component {
             <div className="modal">
                 <div className="modal-container">
                     <div className="modal-close" onClick={() => history.push("/")}></div>
-                    <h2 className="modal-header" id="message-header">Message Sent Succesfully!</h2>
+                    <h2 className="modal-header" id="message-header">Message sent!</h2>
                     <div className="tick-illustration" id="message-tick"></div>
-                    <button className="btn modal-btn"  onClick={() => history.push("/")}>Homepage</button>
+                    <button className="btn modal-btn" id="message-button"  onClick={() => history.push("/")}>Homepage</button>
                 </div>
             </div>
         );
