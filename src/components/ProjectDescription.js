@@ -9,6 +9,7 @@ import ProjectForm from "./ProjectForm";
 
 class ProjectDescription extends React.Component {
 
+
     onSubmit = (formValues) => {
         this.props.submitOrder(formValues);
     }
@@ -19,7 +20,6 @@ class ProjectDescription extends React.Component {
                 <Flow header="Complete your order">
                     <ProjectForm onSubmit={this.onSubmit}></ProjectForm>
                 </Flow>
-                
             </div>
         )
     }
