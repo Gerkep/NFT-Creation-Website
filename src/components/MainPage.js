@@ -2,7 +2,6 @@ import React from "react";
 import '../style/App.css';
 import {Link} from 'react-router-dom';
 
-import Modal from "./Modal";
 import OfferCard from "./OfferCard";
 import WorkflowContainer from "./WorkflowContainer";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
