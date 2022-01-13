@@ -4,19 +4,20 @@ import Flow from './Flow';
 
 import "../style/FlowDescription.css"
 import { connect } from "react-redux";
-import { submitOrder } from "../actions";
+import { submitOrder} from "../actions";
 import ProjectForm from "./ProjectForm";
 
 class ProjectDescription extends React.Component {
 
 
-    onSubmit = (formValues) => {
+    onSubmit = (formValues, base64) => {
         this.props.submitOrder(formValues);
+
     }
 
     render(){
         return(
-            <div>
+            <div className="summary-background">
                 <Flow header="Complete your order">
                     <ProjectForm onSubmit={this.onSubmit}></ProjectForm>
                 </Flow>

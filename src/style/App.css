@@ -244,14 +244,13 @@ a{
         width: 14vw;
         text-align: center;
     } 
-    .section-header{font-size: 5vw; text-align: center; width: 100%;}
+    .section-header{font-size: 5vw; text-align: center; width: 100%; margin-top: 5vw;}
     .section{
         padding-top: 3.5vw;
     }
     .workflow-section{
         display: flex;
     }
-    .about-nfts-section{margin-top: 5vw;}
     .about-nft-container{
         display: flex;
         width: 100%;
@@ -276,7 +275,6 @@ a{
         justify-content: center;
     }
     .best-illustration { width: 24vw; height: 24vw;}
-    .hook-section{margin: 5vw 0 5vw 0;}
     .hook {font-size: 1.8vw; }
     .hook-content{width: 52vw; margin: 2vw 8vw 0 0;}
     #desktop-illustration{display: block;}
@@ -289,8 +287,8 @@ a{
     }
     .footer-logo{font-size: 5vw; margin: 0;}
     .media-icon{
-        height: 5vw;
-        width: 5vw;
+        height: 4vw;
+        width: 4vw;
         margin: 5vw;
     }
     .footer-navbar{flex-wrap: nowrap; margin-top: 1vw; width: 100%; justify-content: center;} 

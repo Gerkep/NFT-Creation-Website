@@ -6,6 +6,15 @@
     text-align: center;
     font-size: 10vw;
 }
+.summary-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
 .card-illustration{
     width: 40vw;
     height: 30vw;
@@ -55,14 +64,7 @@
 
 @media screen and (min-width: 1200px) {
     .summary-background{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
         background-image: url("../images/summary-background.png");
-        background-size: cover;
-        background-position: center;
     }
     .summary-container{
         margin: 0 auto;
@@ -93,7 +95,7 @@
     
     .summary-note{
         font-size: 1vw;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
         color: #ffffffc5;
     }
     .buybtn{

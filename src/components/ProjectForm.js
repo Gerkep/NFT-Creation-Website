@@ -9,7 +9,8 @@ class ProjectDescription extends React.Component {
 
     state = { imageFile: [] };
     
-  handleOnDrop = (newImageFile, onChange) => {
+  handleOnDrop = async (newImageFile, onChange) => {
+
     const imageFile = {
       file: newImageFile[0],
       name: newImageFile[0].name,
@@ -19,6 +20,7 @@ class ProjectDescription extends React.Component {
 
     this.setState({ imageFile: [imageFile] }, () => onChange(imageFile));
   };
+  
 
   resetForm = () => this.setState({ imageFile: [] }, () => this.props.reset());
 
@@ -51,7 +53,7 @@ class ProjectDescription extends React.Component {
         );
     }
 
-    onSubmit = (formValues) => {
+    onSubmit = async (formValues) => {
         this.props.onSubmit(formValues);
     }
 
@@ -64,24 +66,11 @@ class ProjectDescription extends React.Component {
                             <Field className="description-input" name="description" component={this.renderTextfield} label="Describe Idea:"/>
                         </div>
                         <div>
-                            <Field
-                                className="dropzone"
-                                name="imageToUpload"
-                                component={DropZoneField}
-                                type="file"
-                                imagefile={this.state.imageFile}
-                                handleOnDrop={this.handleOnDrop}
-                                validate={[imageIsRequired]}
-                            />
-                            <button
-                                type="button"
-                                className="uk-button uk-button-default uk-button-large clear"
-                                disabled={this.props.pristine || this.props.submitting}
-                                onClick={this.resetForm}
-                            >
-                            Clear
-                            </button>
-                            <button className="btn continue" id="continue-btn">Continue</button>
+                           <div className="description-note">
+                               <p className="description-info">Note: Try to write as comprehensive description as possible. It will make the design process easier and faster.<br/><br/><br/> If you want you can send us image similar to your desired outcome. <br/>Email: nftiece@gmail.com. </p>
+                               <p className="note" id="emailus-info">(Please email us using the same adress you enter into the form!)</p>
+                                <button className="btn continue" id="continue-btn">Continue</button>
+                            </div>
                         </div>
                     </form>
             </div>

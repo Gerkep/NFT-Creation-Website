@@ -8,7 +8,7 @@ import otherArt from '../images/otherArt.jpeg';
 
 const ProjectStyle = () => {
     return(
-        <div>
+        <div className="summary-background">
             <Flow header="Which style matches your vision?" link="/project/description">
                 <StyleContainer image={cryptoPunk} header="Pixel"></StyleContainer><br/>
                 <StyleContainer image={boredApe} header="Cartoon"></StyleContainer><br/>

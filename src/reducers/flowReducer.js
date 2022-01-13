@@ -3,7 +3,8 @@ const INITIAL_STATE = {
     style: null,
     email: null,
     description: null,
-    image: null
+    image: null,
+    base64: null
 }
 
 export default (state = INITIAL_STATE, action) => {
@@ -13,7 +14,7 @@ export default (state = INITIAL_STATE, action) => {
         case "STYLE_SELECTED":
             return {...state, style: action.payload}
         case "ORDER_SUBMITTED":
-            return {...state, email: action.payload.email, description: action.payload.description, image: action.payload.imageToUpload.preview}
+            return {...state, email: action.payload.email, description: action.payload.description}
         default:
             return state;
     }

@@ -5,17 +5,18 @@ import '../style/Success.css'
 class Success extends React.Component{
 
     componentDidUpdate(){
-        this.sendEmail();
+        // this.sendEmail();
     }
     componentDidMount(){
-        this.sendEmail();
+        // this.sendEmail();
        
     }
 
 
-    sendEmail = () => {
+    sendEmail = async () => {
         if(this.props.flow.email){
             const flow = this.props.flow;
+
             let price = 0;
             if(flow.project==="Basic"){
                 price = "$49.99"
@@ -47,7 +48,6 @@ class Success extends React.Component{
                 });  
         }
     }
-
 
     render(){
         return(
