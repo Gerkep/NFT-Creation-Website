@@ -4,7 +4,7 @@ import StyleContainer from "./StyleContainer";
 
 import cryptoPunk from '../images/cryptopunk.png';
 import boredApe from '../images/boredape.png';
-import otherArt from '../images/otherArt.jpeg';
+import otherArt from '../images/otherArt.jpg';
 
 const ProjectStyle = () => {
     return(
