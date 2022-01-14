@@ -2,7 +2,7 @@
     width: 65vw;
     height: auto;
     padding: 7vw;
-    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 1px 15px rgba(255, 0, 242, 0.801);
     margin: 0 auto;
     margin-top: 10vw;
     margin-bottom: 10vw;
@@ -35,7 +35,7 @@
 .button:hover{
   transition: all 0.3s ease;
   transform: scale(1.1);
-  box-shadow: 0 5px 25px #e40ab16b;
+  box-shadow: 0 5px 25px #e40ab154;
 }
 .pro{
   color: white;
