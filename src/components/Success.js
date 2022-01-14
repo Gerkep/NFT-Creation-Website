@@ -5,10 +5,10 @@ import '../style/Success.css'
 class Success extends React.Component{
 
     componentDidUpdate(){
-        // this.sendEmail();
+        this.sendEmail();
     }
     componentDidMount(){
-        // this.sendEmail();
+        this.sendEmail();
        
     }
 
@@ -31,7 +31,8 @@ class Success extends React.Component{
                 style: `${flow.style}`,
                 image: `${flow.image}`,
                 description: `${flow.description}`,
-                price: `${price}`
+                price: `${price}`,
+                order: `yes`
             };
                         
             send('service_h4nrxmt', 'template_zv9b0qm', templateParams, 'user_AZ09C0zkBDOiPWXVQT35h')

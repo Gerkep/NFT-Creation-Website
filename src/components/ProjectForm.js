@@ -1,28 +1,9 @@
 import React from "react";
-import DropZoneField from "./dropzone/DropzoneField";
 import { Field, reduxForm } from "redux-form";
 
 import "../style/FlowDescription.css"
 
-const imageIsRequired = value => (!value ? "Required" : undefined);
 class ProjectDescription extends React.Component {
-
-    state = { imageFile: [] };
-    
-  handleOnDrop = async (newImageFile, onChange) => {
-
-    const imageFile = {
-      file: newImageFile[0],
-      name: newImageFile[0].name,
-      preview: URL.createObjectURL(newImageFile[0]),
-      size: newImageFile[0].size,
-    };
-
-    this.setState({ imageFile: [imageFile] }, () => onChange(imageFile));
-  };
-  
-
-  resetForm = () => this.setState({ imageFile: [] }, () => this.props.reset());
 
     renderTextfield({input, label}){
         return(

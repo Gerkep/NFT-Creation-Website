@@ -32,13 +32,13 @@ const MainPage = () => {
         </div>
         <Link to="/project" className="btn mobile-btn"><span className="btn-text">Get Started!</span></Link>
 
-        <div className="section offer-section">
+        <div className="section offer-section" id="pricing">
             <h2 className="section-header">Choose project.</h2>
             <OfferCard name="Basic" characters={1}ś delivery={5} revisions={2} price={49.99}/>
             <OfferCard name="Pro" characters="1K" delivery={8} revisions={4} price={1499}/>
             <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
         </div>
-        <div className="section about-section">
+        <div className="section about-section" id="workflow">
             <h2 className="section-header">It's simple!</h2>
             <div className="workflow-section">
                 <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
@@ -75,9 +75,9 @@ const MainPage = () => {
             <p className="logo footer-logo">NFTiece</p>
             <div className="footer-navbar">
                     <Link to="/project" className="footer-link footer-link-desktop" href="">Design</Link>
-                    <a className="footer-link footer-link-desktop" href="">Pricing</a>
+                    <a className="footer-link footer-link-desktop" href="#pricing">Pricing</a>
                     <a className="footer-link" href="">Privacy policy</a>
-                    <a className="footer-link footer-link-desktop" href="">Workflow</a>
+                    <a className="footer-link footer-link-desktop" href="#workflow">Workflow</a>
                     <Link className="footer-link" to="/main/contact">Contact us</Link>
             </div>
             <div className="social-media">

@@ -54,7 +54,7 @@ class Modal extends React.Component {
     }
 
     onSubmit = (formValues) => {
-        // this.sendEmail(formValues);
+        this.sendEmail(formValues);
     }
 
     render(){
