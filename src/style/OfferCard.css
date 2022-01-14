@@ -2,7 +2,7 @@
     width: 65vw;
     height: auto;
     padding: 7vw;
-    box-shadow: 0px 5px 55px rgb(212, 0, 255);
+    background-color: rgb(26, 26, 26);
     margin: 0 auto;
     margin-top: 10vw;
     margin-bottom: 10vw;
@@ -28,14 +28,14 @@
   font-size: 3.5vw;
   font-weight: 700;
   background-color: transparent;
-  border: 2px solid #e40ab1;
+  border: 2px solid white;
   color: white;
   cursor: pointer;
 }
 .button:hover{
   transition: all 0.3s ease;
   transform: scale(1.1);
-  box-shadow: 0 5px 34px #e40ab154;
+  box-shadow: 0 5px 25px #e40ab16b;
 }
 .pro{
   color: white;
