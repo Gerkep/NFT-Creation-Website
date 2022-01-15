@@ -70,7 +70,7 @@ a{
     background-repeat: no-repeat;
     height: 80vw;
     margin: auto;
-    margin: 0 0 10vw 0;
+    margin: 4vw 0 10vw 0;
 }
 .section-header{font-size: 10vw; margin-bottom: 5vw; padding: 0 5vw 0 5vw;}
 .section{
@@ -147,7 +147,8 @@ a{
     width: 100%;
 }
 .media-icon{
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 10vw;
     width: 10vw;
     margin: 7vw;
@@ -158,8 +159,8 @@ a{
 .twitter{
     background-image: url("../images/twitter.png");
 }
-.facebook{
-    background-image: url("../images/facebook.png");
+.tiktok{
+    background-image: url("../images/tiktok.png");
 }
 .footer-logo{font-size: 8vw;}
 .footer-navbar{display: flex; flex-wrap: wrap; margin-top: 5vw;} 
