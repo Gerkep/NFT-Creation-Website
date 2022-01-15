@@ -17,7 +17,7 @@
 }
 .card-illustration{
     width: 40vw;
-    height: 30vw;
+    height: 33vw;
     background-image: url("../images/paint-kit-dynamic-gradient.png");
     background-size: cover;
     background-position: center;
@@ -60,6 +60,7 @@
     background-color: #635bff;
     border: none;
     border-radius: 30px;
+    color: white;
 }
 
 @media screen and (min-width: 1200px) {

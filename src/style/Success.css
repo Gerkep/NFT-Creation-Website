@@ -1,20 +1,20 @@
 .success-header{
-    margin-top: 10vh;
-    font-size: 10vw;
+    margin-top: 14vh;
+    font-size: 14vw;
 }
 .success-message{
     width: 80%;
     margin: 0 auto;
     margin-top: 10vh;
     text-align: center;
-    font-size: 5.5vw;
+    font-size: 7vw;
 }
 .tick-illustration{
     background-image: url("../images/tick.png");
     background-position: center;
     background-size: cover;
-    height: 30vw;
-    width: 30vw;
+    height: 35vw;
+    width: 35vw;
     margin: 0 auto;
     margin-top: 10vh;
 }
@@ -24,7 +24,7 @@
     margin-top: 5vh;
     color: rgb(255, 255, 255, 0.8);
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 @media screen and (min-width: 1200px) {

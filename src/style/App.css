@@ -18,7 +18,7 @@ a{
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 9vw;
-    margin-top: 5vw;
+    margin-top: 8vw;
 }
 .navbar{
     height: 10vw;
@@ -93,9 +93,10 @@ a{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 85vw;
-    height: 55vw;
+    width: 100vw;
+    height: 70vw;
     margin-top: 10vw;
+    margin-bottom: 4vw;
 }
 .about-nfts-content{
     width: 85%;

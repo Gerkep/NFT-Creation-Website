@@ -32,12 +32,6 @@ const MainPage = () => {
         </div>
         <Link to="/project" className="btn mobile-btn"><span className="btn-text">Get Started!</span></Link>
 
-        <div className="section offer-section" id="pricing">
-            <h2 className="section-header">Choose project.</h2>
-            <OfferCard name="Basic" characters={1}ś delivery={5} revisions={2} price={49.99}/>
-            <OfferCard name="Pro" characters="1K" delivery={8} revisions={4} price={1499}/>
-            <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
-        </div>
         <div className="section about-section" id="workflow">
             <h2 className="section-header">It's simple!</h2>
             <div className="workflow-section">
@@ -45,6 +39,12 @@ const MainPage = () => {
                 <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
                 <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
             </div>
+        </div>
+        <div className="section offer-section" id="pricing">
+            <h2 className="section-header">Choose project.</h2>
+            <OfferCard name="Basic" characters={1}ś delivery={5} revisions={2} price={49.99}/>
+            <OfferCard name="Pro" characters="1K" delivery={8} revisions={4} price={1499}/>
+            <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
         </div>
         <div className="section about-nfts-section">
             <h2 className="section-header">About NFT art</h2>
