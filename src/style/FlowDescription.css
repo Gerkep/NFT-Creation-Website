@@ -35,10 +35,11 @@
   text-align: left;
   margin-left: 8vw;
   margin-top: 17vw;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 0, 0, 0.705);
+  font-size: 3vw;
 }
 .field-error{
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgba(255, 0, 0, 0.774);
 }
 .label{
     text-align: left;
