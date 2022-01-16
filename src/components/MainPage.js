@@ -76,7 +76,7 @@ const MainPage = () => {
             <div className="footer-navbar">
                     <Link to="/project" className="footer-link footer-link-desktop" href="">Design</Link>
                     <a className="footer-link footer-link-desktop" href="#pricing">Pricing</a>
-                    <a className="footer-link" href="">Privacy policy</a>
+                    <a className="footer-link" href="https://www.notion.so/Privacy-policy-aed78a3556664f7f8b6b09f07ef71440">Privacy policy</a>
                     <a className="footer-link footer-link-desktop" href="#workflow">Workflow</a>
                     <Link className="footer-link" to="/main/contact">Contact us</Link>
             </div>
