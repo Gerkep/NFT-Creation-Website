@@ -21,8 +21,8 @@ const MainPage = () => {
         <div className="welcome-page">
             <div className="welcome-text">
                 <div className="slogan">
-                    <h1>We bring Your <br/>idea to <span className="colorful-text">NFT art.</span></h1>
-                    <h3 className="desktop-description">We gathered best designers to create<br/> beautiful art designed to become NFT.</h3>
+                    <h1>Best art for your <br/> <span className="colorful-text">NFT project.</span></h1>
+                    <h3 className="desktop-description">We gathered the finest designers in the space<br/> to help you join web3 revolution.</h3>
                     <Link to="/project" className="btn desktop-main-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
             </div>
@@ -33,38 +33,38 @@ const MainPage = () => {
         <Link to="/project" className="btn mobile-btn"><span className="btn-text">Get Started!</span></Link>
 
         <div className="section about-section" id="workflow">
-            <h2 className="section-header">It's simple!</h2>
+            <h2 className="section-header">It's <span className="colorful-text">simple!</span></h2>
             <div className="workflow-section">
-                <WorkflowContainer image={contactIllustration} header="Contact us" text="Fill the form in our website and describe as good as you can your desired outcome."/>
-                <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait up to one week while professionals chosen specifically for your needs create your art."/>
-                <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's mint it and give yourself a chance to become the next millionaire made by NFT!"/>
+                <WorkflowContainer image={contactIllustration} header="Contact us" text="Place an order on our website and describe your idea as good as possible to avoid unnecessary revisions."/>
+                <WorkflowContainer image={paintingIllustration} header="Wait..." text="Wait while professionals chosen specifically for your needs create your art. We will be in touch to deliver art, that meets you expectations."/>
+                <WorkflowContainer image={axeIllustration} header="Done! Let's mint it!" text="Your art is ready! Let's put it into blockchain, mint it and give yourself a chance to become the next millionaire made by NFT!"/>
             </div>
         </div>
         <div className="section offer-section" id="pricing">
-            <h2 className="section-header">Choose project.</h2>
-            <OfferCard name="Basic" characters={1}ś delivery={5} revisions={2} price={49.99}/>
+            <h2 className="section-header"><span className="colorful-text">Choose</span> a project</h2>
+            <OfferCard name="Basic" characters={1} delivery={5} revisions={2} price={49.99}/>
             <OfferCard name="Pro" characters="1K" delivery={8} revisions={4} price={1499}/>
             <OfferCard name="Max" characters="10K" delivery={14} revisions={6} price={3799} pro={true}/>
         </div>
         <div className="section about-nfts-section">
-            <h2 className="section-header">About NFT art</h2>
+            <h2 className="section-header">About <span className="colorful-text">NFT art</span></h2>
             <div className="about-nft-container">
                 <div className="nfts-image"></div>
                 <div className="about-nfts-content">
                     <p>An NFT(non-fungible token), is a unique digital representation of a good — for our purposes, a work of art. It's akin to a certificate of authenticity or a deed and it's recorded on a blockchain. <br/><br/>
-                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses, NFT art can be very pricey, that's why more and more people are trying to get on the train and earn millions. So don't wait. Start designing your NFT today!
+                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses, NFT art can be very pricey, that's why more and more people are trying to get on the train and earn millions. Don't miss the opportunity. Start designing your NFT project today!
                     </p>
                 </div>
             </div>
         </div>
         <div className="section hook-section">
-            <h2 className="section-header">NFT BOOM is here!</h2>
+            <h2 className="section-header">NFT <span className="colorful-text">BOOM</span> is here!</h2>
             <div className="hook-container">
             <div className="best-illustration" id="mobile-illustration"></div>
                 <div className="hook-content">
                         <p className="hook">Year <span className="colorful-text">2022</span> is expected to be <br className="mobile-br"/><span className="colorful-text">the best year for NFT's</span>,<br className="desktop-br"/> 
                         so if you have an idea for NFT don't wait and join this big trend! 
-                        Reach us out and become next NFT millionaire.
+                        Place an order and become the next NFT millionaire.
                         Don't miss the opportunity. <br/><span className="colorful-text">You are still early!</span></p>
                     <Link to="/project" className="btn mobile-btn" id="hook-btn"><span className="btn-text">Get Started!</span></Link>
                 </div>
