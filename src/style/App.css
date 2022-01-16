@@ -102,7 +102,7 @@ a{
     width: 85%;
     margin: 0 auto;
     font-size: 6vw;
-    color: rgba(255, 255, 255, 0.801);
+    color: rgb(255, 255, 255);
 }
 .best-illustration{
     background-image: url("../images/money-bag-dynamic-gradient.png");
@@ -125,7 +125,7 @@ a{
     width: 90%;
     font-size: 6vw;
     margin: 5vw 0 8vw 0;
-    color: rgba(255, 255, 255, 0.808);
+    color: rgb(255, 255, 255);
 }
 #desktop-illustration{display: none;}
 .footer{
@@ -208,9 +208,9 @@ a{
     }
     .navbar{
         height: 5vw;
-        padding: 2vw 0 1vw 0;
+        padding: 1vw 0 1vw 0;
         justify-content: left;
-        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.637);
         position: fixed;
         top: 0;
     }
@@ -263,7 +263,7 @@ a{
         width: 40vw;
         height: 40vw;
         margin-top: 0;
-        margin-right: 3vw;
+        margin-right: 0vw;
     }
     .about-nfts-content{
         font-size: 1.8vw;
