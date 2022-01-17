@@ -9,7 +9,7 @@ let stripePromise;
 
 const getStripe = () => {
     if (!stripePromise){
-        stripePromise = loadStripe(`${process.env.STRIPE_CLIENT_KEY}`);
+        stripePromise = loadStripe(process.env.STRIPE_CLIENT_KEY);
     }
     return stripePromise;
 }
