@@ -26,18 +26,18 @@ const ProjectSummary = (props) => {
 
     //product for stripe
     const item = {
-        price: "price_1KIvXtJJSIx1GH1oY1ZitX0Y",
+        price: "price_1KEgS0JJSIx1GH1o7JEHhU3G",
         quantity: 1
     };
 
     if(props.flow.projct === "Basic"){
-        item.price = "price_1KIvXtJJSIx1GH1oY1ZitX0Y";
+        item.price = "price_1KEgS0JJSIx1GH1o7JEHhU3G";
         item.quantity = 1;
     }else if(props.flow.project === "Pro"){
-        item.price = "price_1KIvVaJJSIx1GH1o9YIQV0zO";
+        item.price = "price_1KEgTYJJSIx1GH1og1qOq4VT";
         item.quantity = 1;
     }else if(props.flow.project === "Max"){
-        item.price = "price_1KIvX8JJSIx1GH1o6CHWC2FO";
+        item.price = "price_1KEgVIJJSIx1GH1oqGvGMP9Y";
         item.quantity = 1;
     }
     const checkoutOptions = {
