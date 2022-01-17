@@ -6,10 +6,10 @@ import { loadStripe } from "@stripe/stripe-js";
 import Paypal from './paypal/PayPal';
 
 let stripePromise;
-
+const stripeKey = process.env.STRIPE_CLIENT_KEY;
 const getStripe = () => {
     if (!stripePromise){
-        stripePromise = loadStripe(process.env.STRIPE_CLIENT_KEY);
+        stripePromise = loadStripe(stripeKey);
     }
     return stripePromise;
 }
