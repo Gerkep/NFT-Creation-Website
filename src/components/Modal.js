@@ -43,7 +43,7 @@ class Modal extends React.Component {
                 message: `${message}`,
             };
                         
-            send('service_h4nrxmt', 'template_zv9b0qm', templateParams, `${process.env.EMAILJS_USER_ID}`)
+            send('service_h4nrxmt', 'template_zv9b0qm', templateParams, process.env.REACT_APP_EMAILJS_USER_KEY)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     history.push("/main/contact/success");

@@ -35,10 +35,10 @@ class Success extends React.Component{
                 order: `yes`
             };
                         
-            send('service_h4nrxmt', 'template_zv9b0qm', templateParams, process.env.EMAILJS_USER_ID)
+            send('service_h4nrxmt', 'template_zv9b0qm', templateParams, process.env.REACT_APP_EMAILJS_USER_KEY)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    send('service_h4nrxmt', 'template_ckgdmxk', templateParams, process.env.EMAILJS_USER_ID)
+                    send('service_h4nrxmt', 'template_ckgdmxk', templateParams, process.env.REACT_APP_EMAILJS_USER_KEY)
                     .then(function(response) {
                         console.log('SUCCESS!', response.status, response.text);
                     }, function(error) {

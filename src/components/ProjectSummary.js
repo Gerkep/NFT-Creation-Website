@@ -8,7 +8,7 @@ import Paypal from './paypal/PayPal';
 let stripePromise;
 const getStripe = () => {
     if (!stripePromise){
-        stripePromise = loadStripe("pk_test_51KEZZKJJSIx1GH1o3mp1E23esbLPDfHMGNXYh7U7gJOFTeS0M7g8FzRiir2sAAkxUQdjUwMzPOsSsVVoH8xDfWB200Xwz4kmPv");
+        stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
     }
     return stripePromise;
 }
