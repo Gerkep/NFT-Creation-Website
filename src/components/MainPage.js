@@ -52,7 +52,7 @@ const MainPage = () => {
                 <div className="nfts-image"></div>
                 <div className="about-nfts-content">
                     <p>An NFT(non-fungible token), is a unique digital representation of a good — for our purposes, a work of art. It's akin to a certificate of authenticity or a deed and it's recorded on a blockchain. <br/><br/>
-                        It ensures, that every art is one of a kind. Thanks to scarcity that it arouses, NFT art can be very pricey, that's why more and more people are trying to get on the train and earn millions. Don't miss the opportunity. Start designing your NFT project today!
+                        It ensures, that every art is one of a kind. Thanks to scarcity it creates, NFT art can be very pricey, that's why more and more people are trying to get on the train and earn millions. Don't miss the opportunity. Start designing your NFT project today!
                     </p>
                 </div>
             </div>
