@@ -3,8 +3,9 @@
     height: 40vw;
     border-radius: 20px;
     margin-top: 3vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding: 2.8vw;
+    padding-left: 4vw;
     margin-left: 6vw;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.692);
@@ -21,7 +22,7 @@
     margin: 3vw 100px 10vw 6vw;
     border-radius: 20px;
     padding: 2.2vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.685);
     box-shadow: 0 5px 40px rgba(0, 0, 0, 0.425);
