@@ -26,12 +26,12 @@ const ProjectSummary = (props) => {
 
     //product for stripe
     const item = {
-        price: "price_1KIwF9JJSIx1GH1opXdFD65R",
+        price: "price_1KIvUSJJSIx1GH1oS6HAx02I",
         quantity: 1
     };
 
     if(props.flow.projct === "Basic"){
-        item.price = "price_1KIwF9JJSIx1GH1opXdFD65R";
+        item.price = "price_1KIvUSJJSIx1GH1oS6HAx02I";
         item.quantity = 1;
     }else if(props.flow.project === "Pro"){
         item.price = "price_1KIvVaJJSIx1GH1o9YIQV0zO";
