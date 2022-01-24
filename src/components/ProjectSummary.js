@@ -53,7 +53,7 @@ const ProjectSummary = (props) => {
         setLoading(true);
 
         //redirecting to stripe
-        const stripe = await getStripe;
+        const stripe = await getStripe();
         const {error} = await stripe.redirectToCheckout(checkoutOptions);
         if(error) setStripeError(error.message);
         setLoading(false);

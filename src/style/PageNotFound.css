@@ -1,0 +1,45 @@
+.page-not-found{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.error-text{
+    margin-top: 20vw;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+}
+.back-link{
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
+.not-found-image{
+    background-image: url("../images/map-pin-dynamic-gradient.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 50vw;
+    margin: 14vw 0 8vw 0;
+}
+.colorful-text{display: inline;}
+
+@media screen and (min-width: 1200px) {
+    .error-text{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    .not-found-image{
+        margin: 3vw 0 3vw 0;
+        height: 30vw;
+    }
+    .back-link{
+        font-size: 2vw;
+    }
+
+}
