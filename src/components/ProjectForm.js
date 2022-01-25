@@ -60,7 +60,7 @@ class ProjectDescription extends React.Component {
 }
 const validate = formValues => {
     const errors = {};
-    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const mailFormat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
     if(!(formValues.email) || !(formValues.email.match(mailFormat))){
         errors.email = 'Enter valid email';

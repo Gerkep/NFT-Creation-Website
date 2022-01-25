@@ -81,9 +81,9 @@ const MainPage = () => {
                     <Link className="footer-link" to="/main/contact">Contact us</Link>
             </div>
             <div className="social-media">
-                    <a className="media-icon twitter" href="https://twitter.com/nftiece1"></a>
-                    <a className="media-icon instagram" href="https://www.instagram.com/nftiece/"></a>
-                    <a className="media-icon tiktok" href="https://www.tiktok.com/@nftiece"></a>
+                    <a className="media-icon twitter" href="https://twitter.com/nftiece1"> </a>
+                    <a className="media-icon instagram" href="https://www.instagram.com/nftiece/"> </a>
+                    <a className="media-icon tiktok" href="https://www.tiktok.com/@nftiece"> </a>
             </div>
 
         </div>

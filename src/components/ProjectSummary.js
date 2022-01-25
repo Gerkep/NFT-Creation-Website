@@ -72,7 +72,7 @@ const ProjectSummary = (props) => {
                     <div className="paypal-button-container"><Paypal product={product} /></div>
                     <p style={{textAlign: "center"}}>or</p>
                     <button className="buybtn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Stripe"}</button>
-                    <p className="note" id="policy-note">By buying our service you accept <a href="#">privacy policy</a>.</p>
+                    <p className="note" id="policy-note">By buying our service you accept <a href="https://www.notion.so/Privacy-policy-aed78a3556664f7f8b6b09f07ef71440">privacy policy</a>.</p>
                 </div>
             </div>
         )
