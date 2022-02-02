@@ -27,7 +27,7 @@ class Modal extends React.Component {
     }
 
     renderInput = ({input, label, meta}) => {
-        const className = `input ${meta.error && meta.touched ? 'field-error': ''}`
+        const className = `input ${meta.error && meta.touched ? 'field-error': ''}`//sorry bro...
         return(
             <div>
                 <h2 className="label modal-label">{label}</h2>
@@ -40,7 +40,7 @@ class Modal extends React.Component {
     sendEmail({email, message}) {
             let templateParams = {
                 email: `${email}`,
-                message: `${message}`,
+                message: `${message}`
             };
                         
             send('service_h4nrxmt', 'template_zv9b0qm', templateParams, process.env.REACT_APP_EMAILJS_USER_KEY)
