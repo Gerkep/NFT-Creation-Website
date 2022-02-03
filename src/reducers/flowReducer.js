@@ -3,7 +3,7 @@ const INITIAL_STATE = {
     style: null,
     email: null,
     description: null,
-    price: 0
+    price: null
 }
 
 export default (state = INITIAL_STATE, action) => {

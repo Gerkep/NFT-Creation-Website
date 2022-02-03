@@ -18,6 +18,11 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
         }
     }
 
+    const projectInfo = {
+        name: name,
+        price: price
+    }
+
     return(
         <div>
             <div className="offer-card">
@@ -28,7 +33,7 @@ const OfferCard = ({name, characters, charactersFormat, delivery, revisions, pri
                 <div className="detail revisions">Up to <b className="colorful-text">{revisions}</b> revisions*</div>
                 <div className="detail revisions"><b className="colorful-text">+</b>Video guide "how to mint NFT"</div>
                 <div className="detail price">${price}{costPerNFT()}</div>
-                <button onClick={() => selectProject(name, price)} className={`button ${isPro()}`}>Choose</button>
+                <button onClick={() => selectProject(projectInfo)} className={`button ${isPro()}`}>Choose</button>
                 <p className="note">*May vary depending on the complexity of the project.</p>
             </div>
         </div>
