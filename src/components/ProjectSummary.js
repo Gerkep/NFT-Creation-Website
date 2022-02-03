@@ -31,7 +31,7 @@ const ProjectSummary = (props) => {
     };
 
     if(props.flow.projct === "Basic"){
-        item.price = "price_1KIvUSJJSIx1GH1oS6HAx02I";
+        item.price = "price_1KIvXtJJSIx1GH1oY1ZitX0Y";
         item.quantity = 1;
     }else if(props.flow.project === "Pro"){
         item.price = "price_1KIvVaJJSIx1GH1o9YIQV0zO";

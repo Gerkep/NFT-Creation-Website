@@ -7,6 +7,7 @@ import WorkflowContainer from "./WorkflowContainer";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
+import '../animations/cardAppear';
 
 
 const MainPage = () => {
@@ -14,7 +15,7 @@ const MainPage = () => {
         <div className="main-page">
 
         <div className="navbar">
-            <p className="logo">NFTiece</p>
+            <p className="logo">Nftiece</p>
             <Link to="/project" className="btn nav-btn"><span className="btn-text">Get Started!</span></Link>
         </div>
 
@@ -72,7 +73,7 @@ const MainPage = () => {
             </div>
         </div>
         <div className="footer">
-            <p className="logo footer-logo">NFTiece</p>
+            <p className="logo footer-logo">Nftiece</p>
             <div className="footer-navbar">
                     <Link to="/project" className="footer-link footer-link-desktop" href="">Design</Link>
                     <a className="footer-link footer-link-desktop" href="#pricing">Pricing</a>
