@@ -7,7 +7,6 @@ import WorkflowContainer from "./WorkflowContainer";
 import contactIllustration from "../images/chat-dynamic-gradient.png";
 import paintingIllustration from "../images/paint-brush-dynamic-gradient.png";
 import axeIllustration from "../images/axe-dynamic-gradient.png";
-import '../animations/cardAppear';
 
 
 const MainPage = () => {
