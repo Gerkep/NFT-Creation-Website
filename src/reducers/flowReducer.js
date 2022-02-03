@@ -3,14 +3,13 @@ const INITIAL_STATE = {
     style: null,
     email: null,
     description: null,
-    image: null,
-    base64: null
+    price: 0
 }
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type){
         case "PROJECT_SELECTED":
-            return {...state, project: action.payload}
+            return {...state, project: action.payload.name, price: action.payload.price}
         case "STYLE_SELECTED":
             return {...state, style: action.payload}
         case "ORDER_SUBMITTED":

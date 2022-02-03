@@ -21,12 +21,12 @@ const ProjectSummary = (props) => {
     //product for paypal
     const product = {
         description: "Illustration collection ready to be minted as NFT's",
-        price: 49.99
+        price: props.flow.price
     }
 
     //product for stripe
     const item = {
-        price: "price_1KIvUSJJSIx1GH1oS6HAx02I",
+        price: "price_1KIvXtJJSIx1GH1oY1ZitX0Y",
         quantity: 1
     };
 
@@ -71,7 +71,7 @@ const ProjectSummary = (props) => {
                     <p className="summary-note">Please make sure your email adress is correct. Thanks to it we will be able to identify and contact you during the design proceess.</p>
                     <div className="paypal-button-container"><Paypal product={product} /></div>
                     <p style={{textAlign: "center"}}>or</p>
-                    <button className="buybtn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading" : "Stripe"}</button>
+                    <button className="buybtn" onClick={redirectToCheckout} disabled={isLoading}>{isLoading ? "Loading..." : "Stripe"}</button>
                     <p className="note" id="policy-note">By buying our service you accept <a href="https://www.notion.so/Privacy-policy-aed78a3556664f7f8b6b09f07ef71440">privacy policy</a>.</p>
                 </div>
             </div>
